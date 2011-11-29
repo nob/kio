@@ -138,7 +138,7 @@ jQuery(function($){
 
         //Slide main-ctlr back to original state if distance is defined. 
         $("#main-ctlr").animate({top: 100, left: 0}, 700);
-        $("#logo").animate({height: 300}, 500);
+        $("#logo").animate({height: 310}, 500);
         $("#main-ctlr").width(450);
         $("#menu").show();
         $(".circle").stop().animate(

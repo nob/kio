@@ -18,7 +18,7 @@ div#main-ctlr {
 h1#logo{
   	margin: 0 auto;
    	width:250px;
-    height: 300px;
+    height: 310px;
     padding: 10px 0px 0px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
@@ -35,7 +35,7 @@ h1#logo img {
 div#menu {
 	position: relative;
 	top: -75px;
-	left: 30px;
+	left: 34px;
 }
 div#menu>a{
 	position: relative;
