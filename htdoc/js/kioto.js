@@ -4,12 +4,11 @@ jQuery(function($){
      *-------------------------------*/    
     //Output window size for developemnt purpose.
     //$("#debug").text('window: ' + $(window).width() + ' x ' + $(window).height());
-
     /*----------------------------------------
      * fullscreen background slideshow setup. 
      *----------------------------------------*/    
     $.supersized({
-
+        autoplay            :   0,
         start_slide         :   1,      //Start slide (0 is random)
         random              :   0,      //Randomize slide order (Ignores start slide)
         slide_interval      :   4500,   //Length between transitions
@@ -52,6 +51,13 @@ jQuery(function($){
                                         {image : 'img/slide/tmp-79.jpg'}
                                 ]
         
+    });
+
+    /*-------------------------------
+     * Fade In effect.
+     *-------------------------------*/
+    $('#blind').delay(100).fadeOut(1500, function () {
+        api.playToggle();
     });
 
     /*-------------------------------
@@ -106,7 +112,7 @@ jQuery(function($){
      *-------------------------------*/    
      $('#open-map').overlay({
         left: 550, 
-        top: $('#open-map').position().top - 220,
+        top: $('#open-map').position().top - 240,
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
             wrap.load(this.getTrigger().attr('href'));

@@ -8,25 +8,35 @@ div#debug {
 	background-color: #000000;
 	color: #ffffff;
 }
+div#blind {
+	width: 100%;
+	height: 100%;
+	background-color:#000000;
+	z-index:100;
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;	
+}
 div#main-ctlr {
 	position:relative;
 	top:100px;
   	margin: 0 auto;
 	width: 450px;
-	
+	z-index:200;
 }
 h1#logo{
   	margin: 0 auto;
    	width:250px;
     height: 310px;
     padding: 10px 0px 0px;
-    -webkit-border-radius: 20px;
     border-radius: 20px;
-    -moz-border-radius: 20px;
     background: rgba(255, 255, 255, 0.60);
-/*    background: rgba(247, 232, 197, 0.60);*/
-	rgba(247, 232, 197)
-/*    color:#000;*/
+}
+.oldie h1#logo {
+	-pie-background: rgba(255, 255, 255, 0.60);
+	behavior: url(PIE.php);
 }
 h1#logo img {
     display: block;
@@ -42,14 +52,16 @@ div#menu>a{
 	width: 120px;
 	height: 120px;
 	border: 0px solid #000;
-	display: -moz-inline-stack;
 	display: inline-block;
 	vertical-align: top;
 	margin: 3px;
 	text-align: center;
 	text-decoration: none;
+}
+.ie6 div#manu>a, 
+.ie7 div#menu>a {
 	zoom: 1;
-	*display: inline;
+	display: inline;
 }
 div#menu>a#company>span.circle{
 	background-color: #415e27;
@@ -67,10 +79,10 @@ div#menu>a>span.circle {
 	height: 80px;
 	border: 0px solid #000;
 	display: block;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
 	border-radius: 100px;
-	
+}
+.oldie div#menu>a>span.circle {
+	behavior: url(PIE.php);
 }
 div#menu>a>span.menu-title{
 	font: normal 1.4em/0.7em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
@@ -86,6 +98,10 @@ div.pane {
 	color:#fff;
 	padding: 0px 0px;
 }
+.oldie div.pane {
+	-pie-background: rgba(0, 0, 0, 0.75);
+	behavior: url(PIE.php);
+}
 div#company-pane {
 	position:fixed;
 	top:0px;
@@ -94,6 +110,7 @@ div#company-pane {
 /*	width: 650px;*/
 	height: 100%;
 	overflow-x: hidden;
+	overflow-y: auto;
 }
 div#inquiry-pane {
 	position:fixed;
@@ -103,6 +120,7 @@ div#inquiry-pane {
 /*	width: 650px;*/
 	height: 100%;
 	overflow-x: hidden;
+	overflow-y: auto;
 }
 div#products-pane {
 	position:fixed;
@@ -110,7 +128,7 @@ div#products-pane {
   	width: 100%;
 	height: 0%;
 /*	height: 300px;*/
-	overflow-y: hidden;
+	overflow-y: auto;
 }
 div.pane>.content{
 	margin: 20px 30px;
@@ -148,12 +166,15 @@ div#company-pane div#messages {
 }
 div#company-pane div.info {
 	display: inline-block;
-/*	display: -moz-inline-stack;*/
-	zoom: 1;
-	*display: inline;
+
 	vertical-align: top;
 	margin-left: 20px;
 	margin-right: 60px;
+}
+.ie6 div#company-pane div.info,
+.ie7 div#company-pane div.info {
+	zoom: 1;
+	display: inline;
 }
 div#company-pane div.info p{
 	margin-left: 8px;
@@ -166,7 +187,7 @@ div#inquiry-pane h3{
 	margin-bottom: 15px;
 }
 div#products-pane h2{
-	text-shadow: 2px 4px 0px #42275E;
+	text-shadow: 4px 3px 0px #42275E;
 }
 ul#catalogs {
 	margin-top: 30px;
@@ -177,14 +198,17 @@ ul#catalogs li {
 	width: 30%;
 	height: 120px;
 	border: 0px solid #000;
-	display: -moz-inline-stack;
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 3%;
 	text-align: center;
 	text-decoration: none;
+
+}
+.ie6 ul#catalogs li,
+.ie7 ul#catalogs li {
 	zoom: 1;
-	*display: inline;
+	display: inline;
 }
 ul#catalogs li>a {
 	font: normal 1.6em/1.4em "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
@@ -205,6 +229,7 @@ div.map-overlay {
 	width: 300px;
 	height:300px;
 	display:none;
+	z-index: 300;
 }
 div.map-overlay div.wrap-overlay {
 	width: 300px;
@@ -241,13 +266,7 @@ div.pdf-overlay div.footer {
 input.button, 
 a.button {
 	display: block;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
 	border-radius: 10px;
-	-moz-box-shadow: 4px 4px 1px #000;
-	-webkit-box-shadow: 4px 4px 1px#000;
 	box-shadow: 4px 4px 1px #444;
 	font: normal 1.5em/1.5em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
@@ -259,59 +278,66 @@ a.button {
 	cursor: pointer;
 	text-decoration: none;
 }
+.oldie input.button,
+.oldie a.button {
+	behavior: url(PIE.php);
+}
 input.button:active,
 a.button:active {
 	margin: 10px auto 0px;
-	-moz-box-shadow: 2px 2px 1px #000;
-	-webkit-box-shadow: 2px 2px 1px#000;
 	box-shadow: 2px 2px 1px #888;
+}
+.oldie input.button:active,
+.oldie a.button:active {
+	behavior: url(PIE.php);
 }
 input.download,
 a.download {
-	background-color: #42275E;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#643B8F), to(#42275E));
-	background-image: -webkit-linear-gradient(top, #643B8F, #42275E);
-	background-image: -moz-linear-gradient(top, #643B8F, #42275E);
-	background-image: -ms-linear-gradient(top, #643B8F, #42275E);
-	background-image: -o-linear-gradient(top, #643B8F, #42275E);
-	background-image: linear-gradient(top, #643B8F, #42275E);
+	background: linear-gradient(#643B8F, #42275E);
 	border: 1px solid #42275E;
 	border-top: 1px solid #643B8F;
 	width: 180px;
-	
+}
+.oldie input.download,
+.oldie a.download {
+	-pie-background: linear-gradient(#643B8F, #42275E);
+	behavior: url(PIE.php);
 }
 input.download:hover,
 a.download:hover {
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#7D49B2), to(#42275E));
-	background-image: -webkit-linear-gradient(top, #7D49B2, #42275E);
-	background-image: -moz-linear-gradient(top, #7D49B2, #42275E);
-	background-image: -ms-linear-gradient(top, #7D49B2, #42275E);
-	background-image: -o-linear-gradient(top, #7D49B2, #42275E);
-	background-image: linear-gradient(top, #7D49B2, #42275E);
+	background: linear-gradient(#7D49B2, #42275E);
 	border-top: 1px solid #7D49B2;
 }
+.oldie input.download:hover,
+.oldie a.download:hover {
+    -pie-background: linear-gradient(#7D49B2, #42275E);
+	behavior: url(PIE.php);
+}
+
 input#open-map,
 a#open-map {
-	background-color: #415E27;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#608B3A), to(#415E27));
-	background-image: -webkit-linear-gradient(top, #608B3A, #415E27);
-	background-image: -moz-linear-gradient(top, #608B3A, #415E27);
-	background-image: -ms-linear-gradient(top, #608B3A, #415E27);
-	background-image: -o-linear-gradient(top, #608B3A, #415E27);
-	background-image: linear-gradient(top, #608B3A, #415E27);
+	background: linear-gradient(#608B3A, #415E27);
 	border: 1px solid #415E27;
 	border-top: 1px solid #608B3A;
 	width: 50px;
-	
 	display: inline-block;
-	display: -moz-inline-stack;
-	zoom: 1;
-	*display: inline;
 	font: normal 1em/1em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
 	line-height: 12px;
 	margin: 5px auto 5px;
 	padding: 3px 2px;
+}
+.oldie input#open-map,
+.oldie a#open-map {
+	-pie-background: linear-gradient(#608B3A, #415E27);
+	behavior: url(PIE.php);
+}
+.ie6 input#open-map,
+.ie7 input#open-map,
+.ie6 a#open-map, 
+.ie7 a#open-map {
+	zoom: 1;
+	display: inline;
 }
 input#open-map:active,
 a#open-map:active {
@@ -320,12 +346,11 @@ a#open-map:active {
 }
 input#open-map:hover,
 a#open-map:hover {
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#79AE48), to(#415E27));
-	background-image: -webkit-linear-gradient(top, #79AE48, #415E27);
-	background-image: -moz-linear-gradient(top, #79AE48, #415E27);
-	background-image: -ms-linear-gradient(top, #79AE48, #415E27);
-	background-image: -o-linear-gradient(top, #79AE48, #415E27);
-	background-image: linear-gradient(top, #79AE48, #415E27);
+	background: linear-gradient(#79AE48, #415E27);
 	border-top: 1px solid #79AE48;
 }
-
+oldie input#open-map:hover,
+oldie a#open-map:hover {
+	-pie-background: linear-gradient(#79AE48, #415E27);
+	behavior: url(PIE.php);
+}

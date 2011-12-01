@@ -24,6 +24,7 @@ input#saveForm {
 	background-image: -ms-linear-gradient(top, #363831, #181916);
 	background-image: -o-linear-gradient(top, #363831, #181916);
 	background-image: linear-gradient(top, #363831, #181916);
+	-pie-background: linear-gradient(top, #363831, #181916);
 	border: 1px solid #181916;
 	border-top: 1px solid #363831;
 	-webkit-border-radius: 10px;
@@ -41,7 +42,9 @@ input#saveForm {
 	text-align: center;
 	text-shadow: 0 2px 0 #444;
 	cursor: pointer;
+	behavior: url(http://noboruthedragon.com/kioto/PIE.php);
 }
+	
 input#saveForm:hover {
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#52554B), to(#181916));
 	background-image: -webkit-linear-gradient(top, #52554B, #181916);
@@ -49,6 +52,8 @@ input#saveForm:hover {
 	background-image: -ms-linear-gradient(top, #52554B, #181916);
 	background-image: -o-linear-gradient(top, #52554B, #181916);
 	background-image: linear-gradient(top, #52554B, #181916);
+	-pie-background-image: linear-gradient(top, #52554B, #181916);
+	behavior: url(http://noboruthedragon.com/kioto/PIE.php);
 	border-top: 1px solid #52554B;
 }
 input#saveForm:active {
@@ -56,12 +61,12 @@ input#saveForm:active {
 	-moz-box-shadow: 2px 2px 1px #000;
 	-webkit-box-shadow: 2px 2px 1px#000;
 	box-shadow: 2px 2px 1px #888;
+	behavior: url(http://noboruthedragon.com/kioto/PIE.php);
 }
 .buttons div {
 	margin-left: 228px !important;
 	margin-right: 20px !important;
 }
-
 
 /* user input error */
 #errorLi {
@@ -73,7 +78,6 @@ form li.error {
 form li.focused {
 	background-color: #f7e8c5 !important;
 }
-
 form li.error p.error {
 	margin-left: 180px !important;
 }
