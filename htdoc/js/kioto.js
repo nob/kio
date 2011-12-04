@@ -17,7 +17,7 @@ jQuery(function($){
         transition_speed    :   700,    //Speed of transition
         new_window          :   0,      //Image links open in new window/tab
         keyboard_nav        :   1,      //Keyboard navigation on/off
-        image_path          :   '/img/', //Default image path
+        image_path          :   'img/', //Default image path
         min_width           :   0,      //Min width allowed (in pixels)
         min_height          :   0,      //Min height allowed (in pixels)
         vertical_center     :   1,      //Vertically center background
@@ -25,30 +25,30 @@ jQuery(function($){
         fit_portrait        :   1,      //Portrait images will not exceed browser height
         fit_landscape       :   1,      //Landscape images will not exceed browser width
         slides              :   [           // Slideshow Images
-                                        {image : 'img/slide/tmp-69.jpg'},
-                                        {image : 'img/slide/tmp-81.jpg'},
-                                        {image : 'img/slide/tmp-04.jpg'},
-                                        {image : 'img/slide/tmp-08.jpg'},  
-                                        {image : 'img/slide/tmp-13.jpg'},
-                                        {image : 'img/slide/tmp-20.jpg'},
-                                        {image : 'img/slide/tmp-23.jpg'},
-                                        {image : 'img/slide/tmp-31.jpg'},
-                                        {image : 'img/slide/tmp-40.jpg'},
-                                        {image : 'img/slide/tmp-41.jpg'},
-                                        {image : 'img/slide/tmp-42.jpg'},
-                                        {image : 'img/slide/tmp-48.jpg'},
-                                        {image : 'img/slide/tmp-47.jpg'},
-                                        {image : 'img/slide/tmp-55.jpg'},
-                                        {image : 'img/slide/tmp-57.jpg'},
-                                        {image : 'img/slide/tmp-58.jpg'},
-                                        {image : 'img/slide/tmp-60.jpg'},
-                                        {image : 'img/slide/tmp-62.jpg'},
-                                        {image : 'img/slide/tmp-65.jpg'},
-                                        {image : 'img/slide/tmp-66.jpg'},  
-                                        {image : 'img/slide/tmp-71.jpg'},
-                                        {image : 'img/slide/tmp-75.jpg'},
-                                        {image : 'img/slide/tmp-77.jpg'},
-                                        {image : 'img/slide/tmp-79.jpg'}
+                                        {image : 'img/slide/slide-01.jpg'},
+                                        {image : 'img/slide/slide-02.jpg'},
+                                        {image : 'img/slide/slide-03.jpg'},
+                                        {image : 'img/slide/slide-04.jpg'},  
+                                        {image : 'img/slide/slide-05.jpg'},
+                                        {image : 'img/slide/slide-06.jpg'},
+                                        {image : 'img/slide/slide-07.jpg'},
+                                        {image : 'img/slide/slide-08.jpg'},
+                                        {image : 'img/slide/slide-09.jpg'},
+                                        {image : 'img/slide/slide-10.jpg'},
+                                        {image : 'img/slide/slide-11.jpg'},
+                                        {image : 'img/slide/slide-12.jpg'},
+                                        {image : 'img/slide/slide-13.jpg'},
+                                        {image : 'img/slide/slide-14.jpg'},
+                                        {image : 'img/slide/slide-15.jpg'},
+                                        {image : 'img/slide/slide-16.jpg'},
+                                        {image : 'img/slide/slide-17.jpg'},
+                                        {image : 'img/slide/slide-18.jpg'},
+                                        {image : 'img/slide/slide-19.jpg'},
+                                        {image : 'img/slide/slide-20.jpg'},  
+                                        {image : 'img/slide/slide-21.jpg'},
+                                        {image : 'img/slide/slide-22.jpg'},
+                                        {image : 'img/slide/slide-23.jpg'},
+                                        {image : 'img/slide/slide-24.jpg'}
                                 ]
         
     });
@@ -56,19 +56,30 @@ jQuery(function($){
     /*-------------------------------
      * Fade In effect.
      *-------------------------------*/
-    $('#blind').delay(100).fadeOut(1500, function () {
+    $('#blind').delay(100).fadeOut(1200, function () {
+        $("#logo").animate({height: 300}, 500);
+        $('div#menu').show();
         api.playToggle();
     });
+
+    /*-------------------------------
+     * Text shadow effect for IE.
+     *-------------------------------*/
+    $("div#company-pane h2," +
+      "div#company-pane h3," +
+      "div#company-pane h4," +
+      "div#inquiry-pane h2," +
+      "div#products-pane h2," +
+      "input.button," + 
+      "a.button").textShadow(); 
 
     /*-------------------------------
      * Catelog file overlay.
      *-------------------------------*/    
     $('#catalogs a[rel]').overlay({
-        close: '.download',
-        //speed: 'slow', 
+        close: '.close',
         left: $(window).width() * 0.2 / 2, 
         top: $(window).height() * 0.1 / 2,
-        //effect: 'apple',
         mask: {
             color: '#ebecff',
             loadSpeed: 200,
@@ -76,46 +87,34 @@ jQuery(function($){
         },
         closeOnClick: true,
         onBeforeLoad: function() { 
-            var overlay = this.getOverlay();
-            overlay.width($(window).width() * 0.8); 
-            overlay.height($(window).height() * 0.9);
-            /*
-            var wrap = overlay.find('.wrap-overlay');
-            wrap.load(this.getTrigger().attr('href'));
-            */
-            overlay.load(this.getTrigger().attr('href'));
-
-            /*
-            //for IE8 (or lower) & jQuery fadeIn() bug.
-            if (jQuery.browser.msie && parseInt(jQuery.browser.version) <= 8) {
-                $('#overlay').css('filter', 'progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A)');
-            }   
-            // load the page specified in the trigger 
-            $('#wrap').hide('fast'); //hide current content by fast before loading next.
-            $('#wrap').load(this.getTrigger().attr("href")); 
-            $('#wrap').show('fast'); //now show the content by fast.
-            //activate the trigger to change it's color.
-            this.getTrigger().toggleClass('active', true);
-            */
+            var wrap = this.getOverlay().find('.wrap-overlay');
+            wrap.width($(window).width() * 0.8); 
+            wrap.height($(window).height() * 0.9);
+            var pdf_path = this.getTrigger().attr('href');
+            $('.download').attr('href', pdf_path);
+            var pdf_url = window.location.protocol + '//' + window.location.host + window.location.pathname + pdf_path; 
+            var pdf_viewer_url = 'http://docs.google.com/viewer?embedded=true&url=';
+//alert(pdf_viewer_url + encodeURIComponent(pdf_url));
+            $('#pdf-frame').attr('src', pdf_viewer_url + encodeURIComponent(pdf_url));
         },
         onLoad: function() {
         },
         onClose: function() { 
-            /*
-            //deactivate the trigger to change it's color.
-            this.getTrigger().toggleClass('active', false);
-            */
         }
     });
     /*-------------------------------
      * Map overlay.
      *-------------------------------*/    
      $('#open-map').overlay({
-        left: 550, 
-        top: $('#open-map').position().top - 240,
+        close: '.close',
+        left: 250, 
+        top: $('div.info h4').position().top - 350,
+        closeOnClick: true,
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
-            wrap.load(this.getTrigger().attr('href'));
+            if (wrap.is(":empty")) {
+                wrap.load(this.getTrigger().attr('href'));
+            }
             $('#logo>a').click(function(event) {
                 $('#open-map').data('overlay').close();
             });    
@@ -135,28 +134,32 @@ jQuery(function($){
     slide_pane('#products', 'up');
 
     //Slide Out
-    $("#logo").click(function(event){
+    $("#logo, .pane-close").click(function(event){
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
         //Slide back panel if length of panel is defined.
         $("#company-pane").animate({width: 0}, 1000);
         $("#inquiry-pane").animate({width: 0}, 1000);
         $("#products-pane").animate({height: 0}, 1000);
 
-        //Slide main-ctlr back to original state if distance is defined. 
+        //Slide main-ctlr back to original state. 
         $("#main-ctlr").animate({top: 100, left: 0}, 700);
-        $("#logo").animate({height: 310}, 500);
-        $("#main-ctlr").width(450);
+        $("#logo").animate({height: 300}, 500);
         $("#menu").show();
+        var m_top = -50;
+        var m_left = 20;
+        if ( jQuery.browser.msie  && jQuery.browser.version < 8) {
+            m_top = -55;
+            m_left = 0;
+        }
         $(".circle").stop().animate(
                     {
                      width : '80px', 
                      height : '80px', 
-                     'margin-top' : '-50px', 
-                     'margin-left' : '20px'  
+                     'margin-top' : m_top + 'px', 
+                     'margin-left' : m_left + 'px'  
                     }, 
                     500);
         $(".menu-title").fadeTo(500, 1.00);
-        $("#menu>a").hover(circleExpand, circleBack);
     });
 
     /*-------------------------------
@@ -172,13 +175,9 @@ jQuery(function($){
 function slide_pane(menu_id, direction) {
     $(menu_id).click(function(event){
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
-        var logo_w = $("#logo").width();
-        var logo_h = $("#logo").height();
-        var logo_offset = $("#logo").offset();
         var logo_img_h = $('#logo img').height()
 
         //main-ctlr shrinking
-        $("#menu>a").unbind('hover');
         $(".menu-title").fadeTo(500, 0.00);
         $(".circle").stop().animate(
                      {
@@ -188,31 +187,29 @@ function slide_pane(menu_id, direction) {
                       'margin-left' : '60px'  
                      }, 
                      500).queue(function(){
-                        $("#main-ctlr").width(logo_w);
                         $("#menu").hide();
-                        $("#logo").animate({height: logo_img_h + 20}, 500);
+                        $("#logo").animate({height: logo_img_h}, 500);
                      });
 
         //Slide the pane.
         var sliding;
         var pane_length;
-        var win_w;
-        var win_h;
+        var win_w = $(window).width();
+        var win_h = $(window).height();
+        var logo_w = $("#logo").outerWidth();
+        var logo_offset = $("#logo").offset();
         if (direction == 'left')  { 
             pane_length = 650;
             sliding = {width: pane_length}; 
-            overlap = pane_length - logo_offset.left; 
+            overlap = pane_length - (win_w - logo_offset.left - logo_w); 
         } else if (direction == 'right') {
             pane_length = 650;
             sliding = {width: pane_length}; 
-            win_w = $(window).width();
-            overlap = pane_length - (win_w - logo_offset.left - logo_w); 
+            overlap = pane_length - logo_offset.left; 
         } else if (direction == 'up') {
             pane_length = 265;
             sliding = {height: pane_length}; 
-            win_h = $(window).height();
-            //overlap = pane_length - (win_h - logo_offset.top - logo_h); 
-            overlap = logo_h - (win_h - logo_offset.top - pane_length); 
+            overlap = pane_length - (win_h - logo_offset.top - logo_img_h - 30); 
         }
         $(menu_id + "-pane").animate(sliding, 1800, 'easeOutBounce');
 
@@ -225,31 +222,36 @@ function slide_pane(menu_id, direction) {
             } else if (direction == 'right') {
                 sliding = {left: distance }; 
             } else if (direction == 'up') {
-                sliding = {top: distance }; 
+                sliding = {top: -distance + logo_offset.top }; 
             }
             $("#main-ctlr").animate(sliding, 700);        
         }
     });
 }
-
 circleExpand = function() {
-        $(".circle", this).stop().animate(
-                     {
-                      width : '160px', 
-                      height : '160px', 
-                      'margin-top' : '-90px', 
-                      'margin-left' : '-20px'  
-                     }, 
-                     200);
+    $(".circle", this).stop().animate(
+                 {
+                  width : '160px', 
+                  height : '160px', 
+                  'margin-top' : '-90px', 
+                  'margin-left' : '-20px'  
+                 }, 
+                 200);
 }
 
 circleBack = function() {    
+    var m_top = -50;
+    var m_left = 20;
+    if ( jQuery.browser.msie  && jQuery.browser.version < 8) {
+        m_top = -55;
+        m_left = 0;
+    }
     $(".circle", this).stop().animate(
                 {
                  width : '80px', 
                  height : '80px', 
-                 'margin-top' : '-50px', 
-                 'margin-left' : '20px'  
+                 'margin-top' : m_top + 'px', 
+                 'margin-left' : m_left + 'px'  
                 }, 
                 100);
 }

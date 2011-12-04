@@ -1,5 +1,5 @@
 body {
-	font-family: Georgia,"Times New Roman",Times,serif;
+	font: normal 16px/16px Georgia,"Times New Roman",Times,serif;
 }
 div#debug {
 	position: absolute;
@@ -29,29 +29,41 @@ div#main-ctlr {
 h1#logo{
   	margin: 0 auto;
    	width:250px;
-    height: 310px;
-    padding: 10px 0px 0px;
+    padding: 10px 0px 20px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.60);
+  	z-index:200;
 }
-.oldie h1#logo {
+.no-ie h1#logo{
+  	background: rgba(255, 255, 255, 0.60);
+ }
+.ie h1#logo {	
 	-pie-background: rgba(255, 255, 255, 0.60);
 	behavior: url(PIE.php);
+}
+h1#logo>a, h1#logo>a:focus, h1#logo>a:active {
+    outline: none;
 }
 h1#logo img {
     display: block;
     margin: 0px auto;
+    outline: none;
+}
+h1#logo img:focus, h1#logo img:active {
+    outline: none;
 }
 div#menu {
+	zoom: 1;
 	position: relative;
 	top: -75px;
 	left: 34px;
+	border: 0px solid #FFF;
+	display: none;
 }
 div#menu>a{
 	position: relative;
 	width: 120px;
 	height: 120px;
-	border: 0px solid #000;
+	border: 0px solid #FFF;
 	display: inline-block;
 	vertical-align: top;
 	margin: 3px;
@@ -63,16 +75,16 @@ div#menu>a{
 	zoom: 1;
 	display: inline;
 }
-div#menu>a#company>span.circle{
+div#menu>a#company span.circle{
 	background-color: #415e27;
 }
-div#menu>a#products>span.circle{
+div#menu>a#products span.circle{
 	background-color: #42275e;
 }
-div#menu>a#inquiry>span.circle{
+div#menu>a#inquiry span.circle{
 	background-color: #181916;
 }
-div#menu>a>span.circle {
+div#menu>a span.circle {
 	margin-top: -50px;
 	margin-left: 20px;
 	width: 80px;
@@ -81,26 +93,44 @@ div#menu>a>span.circle {
 	display: block;
 	border-radius: 100px;
 }
-.oldie div#menu>a>span.circle {
+.ie8 div#menu>a span.circle {
 	behavior: url(PIE.php);
 }
-div#menu>a>span.menu-title{
-	font: normal 1.4em/0.7em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
-/*	color: #ffffff;*/
+.ie6 div#menu>a span.circle, 
+.ie7 div#menu>a span.circle {
+	margin-top: -55px;
+	margin-left: 0px;
+}
+div#menu>a span.menu-title{
+	font: normal 22px/14px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
 	margin-top: 40px;
 	margin-left: 0px;
 	display: block;
 	height: 18px;
 }
-div.pane {
-	background:rgba(0,0,0,0.75);
+.ie6 div#menu>a span.menu-title, 
+.ie7 div#menu>a span.menu-title {
+	font: normal 22px/26px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	zoom: 1;
+	position: relative;
+	top: -10px;
+}
+.no-ie div.pane {
+	background:rgba(0,0,0,0.60);
+	color:#fff;
+	padding: 0px 0px;
+}
+.ie9 div.pane {
+	background:rgba(0,0,0,0.50);
 	color:#fff;
 	padding: 0px 0px;
 }
 .oldie div.pane {
-	-pie-background: rgba(0, 0, 0, 0.75);
+	-pie-background: rgba(0, 0, 0, 0.60);
 	behavior: url(PIE.php);
+	color:#fff;
+	padding: 0px 0px;
 }
 div#company-pane {
 	position:fixed;
@@ -110,7 +140,20 @@ div#company-pane {
 /*	width: 650px;*/
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
+	border-right: 8px solid #000;
+}
+div#company-pane>div.pane-close {
+	position: absolute;
+	top: 450px;
+	left: 600px;
+  	width: 50px;
+	height: 46px;
+	background-image: url(../img/c-p-close.png);
+}
+div#company-pane>div.pane-close:hover {
+	background-image: url(../img/c-p-close-l.png);
+	cursor: pointer;
 }
 div#inquiry-pane {
 	position:fixed;
@@ -120,20 +163,48 @@ div#inquiry-pane {
 /*	width: 650px;*/
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
+	border-left: 8px solid #000;
 }
+div#inquiry-pane>div.pane-close {
+	position: absolute;
+	top: 450px;
+	left: 0px;
+  	width: 50px;
+	height: 46px;
+	background-image: url(../img/i-p-close.png);
+}
+div#inquiry-pane>div.pane-close:hover {
+	background-image: url(../img/i-p-close-l.png);
+	cursor: pointer;
+}
+
 div#products-pane {
 	position:fixed;
 	bottom: 0px;
   	width: 100%;
 	height: 0%;
 /*	height: 300px;*/
+	overflow-x: hidden;
 	overflow-y: hidden;
+	border-top: 8px solid #000;
+}
+div#products-pane>div.pane-close {
+	position: absolute;
+	top: 0px;
+	left: 300px;
+  	width: 50px;
+	height: 46px;
+	background-image: url(../img/p-p-close.png);
+}
+div#products-pane>div.pane-close:hover {
+	background-image: url(../img/p-p-close-l.png);
+	cursor: pointer;
 }
 div.pane>.content{
-	margin: 20px 30px;
+	margin: 20px 30px 10px;
 	color: #f7e8c5;
-	font: normal 1.2em/1.2em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;	
+	font: normal 19px/26px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;	
 }
 div#company-pane>div.content {
 	width: 590px;
@@ -142,33 +213,30 @@ div#inquiry-pane>div.content {
 	width: 590px;
 }
 div.pane h2 {
-	font: bold 2em/2.0em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	font: bold 38px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
-	margin-bottom: 0px;
+	margin: 19px 0;
 }
-div#company-pane h2, 
-div#company-pane h3,
-div#company-pane h4 {
-	text-shadow: 2px 3px 0px #385222;
+div#company-pane h2 {
+	text-shadow: 3px 2px 0px #608B3A;
 }
 div#company-pane h3 {
-	margin: 40px 20px 10px;
-	font: bold 1.4em/1.0em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	margin: 0px 20px 15px;
+	font: bold 29px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	text-shadow: 3px 2px 0px #608B3A;
 }
 div#company-pane h4 {
-	font: bold 1em/1.0em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
-	display: inline;
-	line-height:35px;
-	margin-right: 15px;
+	margin: 5px 0px 5px;
+	font: bold 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	text-shadow: 2px 1px 0px #608B3A;
 }
 div#company-pane div#messages {
 	margin-bottom: 50px;
 }
 div#company-pane div.info {
 	display: inline-block;
-
 	vertical-align: top;
-	margin-left: 20px;
+	margin-left: 30px;
 	margin-right: 60px;
 }
 .ie6 div#company-pane div.info,
@@ -180,64 +248,74 @@ div#company-pane div.info p{
 	margin-left: 8px;
 }
 div#inquiry-pane h2{
-	text-shadow: 2px 4px 0px #181916;
+	text-shadow: 3px 4px 2px #5e6257;
 }
 div#inquiry-pane h3{
-	font: normal 1.2em/1.4em "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
+	font: normal 23px/28px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
 	margin-bottom: 15px;
 }
 div#products-pane h2{
-	text-shadow: 4px 3px 0px #42275E;
+	text-shadow: 3px 4px 2px #42275E;
 }
 ul#catalogs {
-	margin-top: 30px;
-	list-style-type: none;
+	margin: 25px 6%;
 }
-ul#catalogs li {
+ul#catalogs>li {
+	font: normal 29px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
+	list-style-type: none;
 	position: relative;
-	width: 30%;
+	width:30%;
 	height: 120px;
 	border: 0px solid #000;
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 3%;
-	text-align: center;
+/*	text-align: center;*/
 	text-decoration: none;
-
 }
-.ie6 ul#catalogs li,
-.ie7 ul#catalogs li {
+.ie6 ul#catalogs>li,
+.ie7 ul#catalogs>li {
 	zoom: 1;
 	display: inline;
 }
+ul#catalogs>li>ul {
+	margin-left: 10%;
+}
+ul#catalogs>li>ul>li {
+	font: normal 24px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
+	text-align: left;
+}
 ul#catalogs li>a {
-	font: normal 1.6em/1.4em "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
+/*	font: normal 29px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;*/
 	color: #f7e8c5;
 	text-decoration: none;
 	cursor: pointer;
 }
 ul#catalogs li>a:hover {
-	color: #7D49B2;
+	color: #9062be;
 }
 
 /*overlay*/
 div.overlay {
 	background-color: #000000;
 	border: 6px solid #000000;
+	display: none;
+	z-index: 300;
 }
 div.map-overlay {
+	background-color: #0e0d0d;
+	border: 6px solid #0e0d0d;
 	width: 300px;
-	height:300px;
+	height:330px;
 	display:none;
-	z-index: 300;
 }
 div.map-overlay div.wrap-overlay {
 	width: 300px;
-	height: 300px
+	height: 330px
 }
 /* close button positioned on upper right corner */
 div.map-overlay .close {
-	background-image:url(../img/apple-close.png);
+	background-image:url(../img/close-s.png);
 	position:absolute;
 	right:-15px;
 	top:-15px;
@@ -246,11 +324,20 @@ div.map-overlay .close {
 	width:28px;
 }
 div.map-overlay iframe {
-	height: 95%;
+	height: 90%;
 	width: 100%;
 	border: 0px solid #333;
 }
 div.pdf-overlay {
+}
+div.pdf-overlay .close {
+	background-image:url(../img/close-l.png);
+	position:absolute;
+	left:-22px;
+	top:-22px;
+	cursor:pointer;
+	height:45px;
+	width:45px;
 }
 div.pdf-overlay iframe {
 	height: 93%;
@@ -267,69 +354,72 @@ input.button,
 a.button {
 	display: block;
 	border-radius: 10px;
-	box-shadow: 4px 4px 1px #444;
-	font: normal 1.5em/1.5em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	box-shadow: 2px 3px 1px #444;
+	font: normal 24px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
 	line-height: 1;
 	margin: 5px auto 5px;
-	padding: 8px 10px;
+	padding: 6px 6px;
 	text-align: center;
-	text-shadow: 0 2px 0 #444;
+	text-shadow: 0px 0px 2px #000;
 	cursor: pointer;
 	text-decoration: none;
+	outline: none;
 }
-.oldie input.button,
-.oldie a.button {
-	behavior: url(PIE.php);
-}
+
 input.button:active,
 a.button:active {
-	margin: 10px auto 0px;
-	box-shadow: 2px 2px 1px #888;
+	position: relative;
+	top: 3px;
+	left: 2px;
+	box-shadow: 0px 0px 0px #888;
+	outline: none;
 }
-.oldie input.button:active,
-.oldie a.button:active {
-	behavior: url(PIE.php);
-}
+
 input.download,
 a.download {
+	background: #42275E;
 	background: linear-gradient(#643B8F, #42275E);
 	border: 1px solid #42275E;
 	border-top: 1px solid #643B8F;
+	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	padding: 4px 6px;
 	width: 180px;
 }
-.oldie input.download,
-.oldie a.download {
+.ie9 input.download,
+.ie9 a.download {
 	-pie-background: linear-gradient(#643B8F, #42275E);
 	behavior: url(PIE.php);
 }
 input.download:hover,
 a.download:hover {
+	background: #7D49B2;
 	background: linear-gradient(#7D49B2, #42275E);
 	border-top: 1px solid #7D49B2;
 }
-.oldie input.download:hover,
-.oldie a.download:hover {
+.ie9 input.download:hover,
+.ie9 a.download:hover {
     -pie-background: linear-gradient(#7D49B2, #42275E);
 	behavior: url(PIE.php);
 }
 
 input#open-map,
 a#open-map {
-/*	background-color: #415E27;*/
-	background: linear-gradient(top, #608B3A, #415E27);
+	background: #608B3A;
+	background: linear-gradient(#608B3A, #415E27);
 	border: 1px solid #415E27;
 	border-top: 1px solid #608B3A;
 	width: 50px;
+	height: 22px;
 	display: inline-block;
-	font: normal 1em/1em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	font: normal 17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
-	line-height: 12px;
 	margin: 5px auto 5px;
 	padding: 3px 2px;
 }
-.oldie input#open-map,
-.oldie a#open-map {
+
+.ie9 input#open-map,
+.ie9 a#open-map {
 	-pie-background: linear-gradient(#608B3A, #415E27);
 	behavior: url(PIE.php);
 }
@@ -340,18 +430,14 @@ a#open-map {
 	zoom: 1;
 	display: inline;
 }
-input#open-map:active,
-a#open-map:active {
-	position: relative;
-	top: 5px;
-}
 input#open-map:hover,
 a#open-map:hover {
+	background: #79AE48;
 	background: linear-gradient(#79AE48, #415E27);
 	border-top: 1px solid #79AE48;
 }
-oldie input#open-map:hover,
-oldie a#open-map:hover {
+.ie9 input#open-map:hover,
+.ie9 a#open-map:hover {
 	-pie-background: linear-gradient(#79AE48, #415E27);
 	behavior: url(PIE.php);
 }

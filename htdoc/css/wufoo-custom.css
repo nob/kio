@@ -42,10 +42,12 @@ input#saveForm {
 	text-align: center;
 	text-shadow: 0 2px 0 #444;
 	cursor: pointer;
+	outline: none;
 	behavior: url(http://noboruthedragon.com/kioto/PIE.php);
 }
 	
 input#saveForm:hover {
+	background-color: #52554B;
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#52554B), to(#181916));
 	background-image: -webkit-linear-gradient(top, #52554B, #181916);
 	background-image: -moz-linear-gradient(top, #52554B, #181916);
