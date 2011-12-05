@@ -34,10 +34,10 @@ h1#logo{
   	z-index:200;
 }
 .no-ie h1#logo{
-  	background: rgba(255, 255, 255, 0.80);
+  	background: rgba(255, 255, 255, 0.70);
  }
 .ie h1#logo {	
-	-pie-background: rgba(255, 255, 255, 0.70);
+	-pie-background: rgba(255, 255, 255, 0.75);
 	behavior: url(PIE.php);
 }
 h1#logo>a, h1#logo>a:focus, h1#logo>a:active {
@@ -141,7 +141,7 @@ div#company-pane {
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	border-right: 8px solid #000;
+	border-right: 0px solid #000;
 }
 div#company-pane>div.pane-close {
 	position: absolute;
@@ -164,7 +164,7 @@ div#inquiry-pane {
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	border-left: 8px solid #000;
+	border-left: 0px solid #000;
 }
 div#inquiry-pane>div.pane-close {
 	position: absolute;
@@ -187,7 +187,7 @@ div#products-pane {
 /*	height: 300px;*/
 	overflow-x: hidden;
 	overflow-y: hidden;
-	border-top: 8px solid #000;
+	border-top: 0px solid #000;
 }
 div#products-pane>div.pane-close {
 	position: absolute;

@@ -54,12 +54,12 @@ jQuery(function($){
     });
 
     /*-------------------------------
-     * Fade In effect.
+     * Initial page fade In effect.
      *-------------------------------*/
-    $('#blind').delay(100).fadeOut(1200, function () {
+    $('#blind').delay(1000).fadeOut(1200, function () {
         $("#logo").animate({height: 300}, 500);
         $('div#menu').show();
-        api.playToggle();
+        api.playToggle(); //start slide show.
     });
 
     /*-------------------------------
@@ -81,16 +81,16 @@ jQuery(function($){
         left: $(window).width() * 0.2 / 2, 
         top: $(window).height() * 0.1 / 2,
         mask: {
-            color: '#ebecff',
-            loadSpeed: 200,
-            opacity: 0.9
+            color: '#000000',
+            loadSpeed: 500,
+            opacity: 0.60
         },
         closeOnClick: true,
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
             wrap.width($(window).width() * 0.8); 
             wrap.height($(window).height() * 0.9);
-            if ($('.download', wrap).attr('href') === '') { 
+            if ($('.download', wrap).attr('href') == '') { 
                 //load iframe only when first time click.
                 var pdf_path = this.getTrigger().attr('href');
                 var pdf_url = window.location.protocol + '//' + 
@@ -150,8 +150,11 @@ jQuery(function($){
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
         //Slide back panel if length of panel is defined.
         $("#company-pane").animate({width: 0}, 1000);
+        $("#company-pane").css('border-right-width', 0);
         $("#inquiry-pane").animate({width: 0}, 1000);
+        $("#inquiry-pane").css('border-left-width', 0);
         $("#products-pane").animate({height: 0}, 1000);
+        $("#products-pane").css('border-top-width', 0);
 
         //Slide main-ctlr back to original state. 
         $("#main-ctlr").animate({top: 100, left: 0}, 700);
@@ -212,18 +215,22 @@ function slide_pane(menu_id, direction) {
         var logo_offset = $("#logo").offset();
         if (direction == 'left')  { 
             pane_length = 650;
+            border_position = 'left';
             sliding = {width: pane_length}; 
             overlap = pane_length - (win_w - logo_offset.left - logo_w); 
         } else if (direction == 'right') {
             pane_length = 650;
+            border_position = 'right';
             sliding = {width: pane_length}; 
             overlap = pane_length - logo_offset.left; 
         } else if (direction == 'up') {
             pane_length = 265;
+            border_position = 'top';
             sliding = {height: pane_length}; 
             overlap = pane_length - (win_h - logo_offset.top - logo_img_h - 30); 
         }
         $(menu_id + "-pane").animate(sliding, 1800, 'easeOutBounce');
+        $(menu_id + "-pane").css('border-' + border_position + '-width', 8);
 
         //Slide main-ctlr if it is overlaped with sliding panel. 
         if (overlap > 0) {
