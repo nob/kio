@@ -100,7 +100,7 @@ jQuery(function($){
                               pdf_path; 
                 var pdf_viewer_url 
                         = 'http://docs.google.com/viewer?embedded=true&url=';
-                //alert(pdf_viewer_url + encodeURIComponent(pdf_url));
+                alert(pdf_viewer_url + encodeURIComponent(pdf_url));
                 $('.pdf-frame', wrap).attr(
                         'src', 
                         pdf_viewer_url + encodeURIComponent(pdf_url)
