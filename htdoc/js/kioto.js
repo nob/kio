@@ -93,18 +93,18 @@ jQuery(function($){
             if ($('.download', wrap).attr('href') === '') { 
                 //load iframe only when first time click.
                 var pdf_path = this.getTrigger().attr('href');
-                $('.download', wrap).attr('href', pdf_path);
                 var pdf_url = window.location.protocol + '//' + 
                               window.location.host + 
                               window.location.pathname +
                               pdf_path; 
                 var pdf_viewer_url 
                         = 'http://docs.google.com/viewer?embedded=true&url=';
-                alert(pdf_viewer_url + encodeURIComponent(pdf_url));
+                //alert(pdf_viewer_url + encodeURIComponent(pdf_url));
                 $('.pdf-frame', wrap).attr(
                         'src', 
                         pdf_viewer_url + encodeURIComponent(pdf_url)
                 );
+                $('.download', wrap).attr('href', pdf_path);
             }
         },
         onLoad: function() {
