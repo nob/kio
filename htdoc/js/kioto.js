@@ -74,7 +74,7 @@ jQuery(function($){
       "a.button").textShadow(); 
 
     /*-------------------------------
-     * Catelog file overlay.
+     * PDF (catelog file) overlay.
      *-------------------------------*/    
     $('#catalogs a[rel]').overlay({
         close: '.close',
@@ -90,18 +90,29 @@ jQuery(function($){
             var wrap = this.getOverlay().find('.wrap-overlay');
             wrap.width($(window).width() * 0.8); 
             wrap.height($(window).height() * 0.9);
-            var pdf_path = this.getTrigger().attr('href');
-            $('.download').attr('href', pdf_path);
-            var pdf_url = window.location.protocol + '//' + window.location.host + window.location.pathname + pdf_path; 
-            var pdf_viewer_url = 'http://docs.google.com/viewer?embedded=true&url=';
-//alert(pdf_viewer_url + encodeURIComponent(pdf_url));
-            $('#pdf-frame').attr('src', pdf_viewer_url + encodeURIComponent(pdf_url));
+            if ($('.download', wrap).attr('href') === '') { 
+                //load iframe only when first time click.
+                var pdf_path = this.getTrigger().attr('href');
+                $('.download', wrap).attr('href', pdf_path);
+                var pdf_url = window.location.protocol + '//' + 
+                              window.location.host + 
+                              window.location.pathname +
+                              pdf_path; 
+                var pdf_viewer_url 
+                        = 'http://docs.google.com/viewer?embedded=true&url=';
+                //alert(pdf_viewer_url + encodeURIComponent(pdf_url));
+                $('.pdf-frame', wrap).attr(
+                        'src', 
+                        pdf_viewer_url + encodeURIComponent(pdf_url)
+                );
+            }
         },
         onLoad: function() {
         },
         onClose: function() { 
         }
     });
+
     /*-------------------------------
      * Map overlay.
      *-------------------------------*/    
@@ -113,9 +124,10 @@ jQuery(function($){
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
             if (wrap.is(":empty")) {
+                //load external page only when first time click.
                 wrap.load(this.getTrigger().attr('href'));
             }
-            $('#logo>a').click(function(event) {
+            $('#logo, .pane-close').click(function(event) {
                 $('#open-map').data('overlay').close();
             });    
         },
