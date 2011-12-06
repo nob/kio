@@ -23,7 +23,7 @@ jQuery(function($){
         vertical_center     :   1,      //Vertically center background
         horizontal_center   :   1,      //Horizontally center background
         fit_portrait        :   1,      //Portrait images will not exceed browser height
-        fit_landscape       :   1,      //Landscape images will not exceed browser width
+        fit_landscape       :   0,      //Landscape images will not exceed browser width
         slides              :   [           // Slideshow Images
                                         {image : 'img/slide/slide-01.jpg?v=3'},
                                         {image : 'img/slide/slide-02.jpg?v=3'},
@@ -83,7 +83,7 @@ jQuery(function($){
         mask: {
             color: '#000000',
             loadSpeed: 500,
-            opacity: 0.60
+            opacity: 0.80
         },
         closeOnClick: true,
         onBeforeLoad: function() { 
@@ -119,7 +119,7 @@ jQuery(function($){
      $('#open-map').overlay({
         close: '.close',
         left: 250, 
-        top: $('div.info h4').position().top - 350,
+        top: 129,
         closeOnClick: true,
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
@@ -155,6 +155,9 @@ jQuery(function($){
         $("#inquiry-pane").css('border-left-width', 0);
         $("#products-pane").animate({height: 0}, 1000);
         $("#products-pane").css('border-top-width', 0);
+
+        //Show background navi.
+        $("#nextslide, #prevslide").show();
 
         //Slide main-ctlr back to original state. 
         $("#main-ctlr").animate({top: 100, left: 0}, 700);
@@ -205,6 +208,9 @@ function slide_pane(menu_id, direction) {
                         $("#menu").hide();
                         $("#logo").animate({height: logo_img_h}, 500);
                      });
+
+        //Hide background navi.
+        $("#nextslide, #prevslide").hide();
 
         //Slide the pane.
         var sliding;

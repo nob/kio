@@ -33,11 +33,14 @@ h1#logo{
     border-radius: 20px;
   	z-index:200;
 }
-.no-ie h1#logo{
-  	background: rgba(255, 255, 255, 0.70);
+h1#logo a, h1#logo img{
+	outline: none;
+}
+.rgba h1#logo{
+  	background: rgba(255, 255, 255, 0.7);
  }
-.ie h1#logo {	
-	-pie-background: rgba(255, 255, 255, 0.75);
+.no-rgba h1#logo {	
+	-pie-background: rgba(255, 255, 255, 0.7);
 	behavior: url(PIE.php);
 }
 h1#logo>a, h1#logo>a:focus, h1#logo>a:active {
@@ -108,6 +111,7 @@ div#menu>a span.menu-title{
 	margin-left: 0px;
 	display: block;
 	height: 18px;
+	text-shadow: 1px 2px 0px #000;
 }
 .ie6 div#menu>a span.menu-title, 
 .ie7 div#menu>a span.menu-title {
@@ -116,21 +120,17 @@ div#menu>a span.menu-title{
 	position: relative;
 	top: -10px;
 }
-.no-ie div.pane {
-	background:rgba(0,0,0,0.60);
+div.pane {
 	color:#fff;
 	padding: 0px 0px;
+	z-index: 250;
 }
-.ie9 div.pane {
-	background:rgba(0,0,0,0.50);
-	color:#fff;
-	padding: 0px 0px;
+.rgba div.pane {
+	background:rgba(0,0,0,0.7);
 }
-.oldie div.pane {
-	-pie-background: rgba(0, 0, 0, 0.60);
+.no-rgba div.pane {
+	-pie-background: rgba(0, 0, 0, 0.7);
 	behavior: url(PIE.php);
-	color:#fff;
-	padding: 0px 0px;
 }
 div#company-pane {
 	position:fixed;
@@ -144,15 +144,17 @@ div#company-pane {
 	border-right: 0px solid #000;
 }
 div#company-pane>div.pane-close {
-	position: absolute;
-	top: 450px;
+	position: relative;
+	top: 350px;
 	left: 600px;
   	width: 50px;
 	height: 46px;
-	background-image: url(../img/c-p-close.png);
+	background: url(../img/c-p-close.png);
+	display: block;
+	padding: 0px;
 }
 div#company-pane>div.pane-close:hover {
-	background-image: url(../img/c-p-close-l.png);
+	background: url(../img/c-p-close-l.png);
 	cursor: pointer;
 }
 div#inquiry-pane {
@@ -168,7 +170,7 @@ div#inquiry-pane {
 }
 div#inquiry-pane>div.pane-close {
 	position: absolute;
-	top: 450px;
+	top: 350px;
 	left: 0px;
   	width: 50px;
 	height: 46px;
@@ -218,20 +220,25 @@ div.pane h2 {
 	margin: 19px 0;
 }
 div#company-pane h2 {
-	text-shadow: 3px 2px 0px #608B3A;
+	text-shadow: 3px 2px 0px #415e27;
 }
 div#company-pane h3 {
 	margin: 0px 20px 15px;
 	font: bold 29px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
-	text-shadow: 3px 2px 0px #608B3A;
+	text-shadow: 3px 2px 0px #415e27;
 }
 div#company-pane h4 {
 	margin: 5px 0px 5px;
 	font: bold 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
-	text-shadow: 2px 1px 0px #608B3A;
+	text-shadow: 2px 1px 0px #415e27;
 }
 div#company-pane div#messages {
 	margin-bottom: 50px;
+}
+div#messages p {
+	margin-top: 1em;
+	font-size: 22px;
+	line-height: 28px;
 }
 div#company-pane div.info {
 	display: inline-block;
