@@ -16,7 +16,7 @@ jQuery(function($){
         image_protect       :   1,
         transition_speed    :   700,    //Speed of transition
         new_window          :   0,      //Image links open in new window/tab
-        keyboard_nav        :   1,      //Keyboard navigation on/off
+        keyboard_nav        :   0,      //Keyboard navigation on/off
         image_path          :   'img/', //Default image path
         min_width           :   0,      //Min width allowed (in pixels)
         min_height          :   0,      //Min height allowed (in pixels)
