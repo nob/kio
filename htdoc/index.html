@@ -25,9 +25,14 @@
     <script type="text/javascript" src="js/kioto.js"></script>
 </head>
 <body>
-    <div id="noscript">Please enable Javascript on your web browser to display this website correctly.</div>
     <div id="debug"><p></p></div>
+    <div id="noscript">Please enable Javascript on your web browser to display this website correctly.</div>
+    <!-- Curtain for initial page load -->
     <div id="blind"></div>
+    <!--Arrow background navigation-->
+    <a id="prevslide" class="load-item"></a>
+    <a id="nextslide" class="load-item"></a>
+    <!-- Logo & Main menu --> 
 	<div id="main-ctlr">
         <h1 id="logo">
             <a href="/">
@@ -57,9 +62,6 @@
             </a>
         </div>
     </div>
-    <!--Arrow background navigation-->
-    <a id="prevslide" class="load-item"></a>
-    <a id="nextslide" class="load-item"></a>
     <!-- Sliding Panels -->
     <div id="company-pane" class="pane">
         <div herf="" class="pane-close"></div>
@@ -70,7 +72,7 @@
                 All without the inconvenience of customs paperwork or overseas wire transfers. 
                 We can accommodate orders of all sizes, and since everything is shipped from our U.S. warehouses, delivery times are remarkably short.</p>
 
-                <p>Our hope is to introduce a time-honored beauty to people in the U.S. by faithfully preserving Japanese traditions and the “waza (art)” and “kokoro (soul)” of Kyoto culture. We invite you to enjoy authentic elements of Japan in your daily lives.</p>
+                <p>Our hope is to introduce a time-honored beauty to people in the U.S. by faithfully preserving Japanese traditions, the “waza (art)” and “kokoro (soul)” of Kyoto culture. We invite you to enjoy authentic elements of Japan in your daily lives.</p>
 
             </div>
             <h3>KIOTO, Inc.</h3>
@@ -86,6 +88,24 @@
                     <a href="map.html" id="open-map" class="button" rel="#map">map</a>
                 </p>
             </div>
+        </div>
+    </div>
+    <div id="products-pane" class="pane">
+        <div class="pane-close"></div>
+        <div class="content">
+            <h2>Product Catalogs</h2>
+            <ul id="catalogs">
+                <li><a href="catalog/kimono_2012_v10.pdf" rel="#pdf-1">Kimono 2012</a></li>
+                <li>
+                    <span>Paper Craft 2012</span>
+                    <ul>
+                    <li><a href="catalog/paper_craft_j_scene_v10.pdf" rel="#pdf-2">Japanese Scene series</a></li>
+                    <li><a href="catalog/paper_craft_diorama_v10.pdf" rel="#pdf-3">Diorama series</a></li>
+                    <li><a href="catalog/paper_craft_petit_v10.pdf" rel="#pdf-4">Petit series</a></li>
+                    </ul>
+                </li>
+                <li><a href="catalog/paper_goods_2012_v10.pdf" rel="#pdf-5">Paper goods 2012</a></li>
+            <ul>
         </div>
     </div>
     <div id="inquiry-pane" class="pane">
@@ -105,24 +125,6 @@
             'header':'show'});
             w7x3z9.display();
             </script>
-        </div>
-    </div>
-    <div id="products-pane" class="pane">
-        <div class="pane-close"></div>
-        <div class="content">
-            <h2>Product Catalogs</h2>
-            <ul id="catalogs">
-                <li><a href="catalog/kimono_2012_v10.pdf" rel="#pdf-1">Kimono 2012</a></li>
-                <li>
-                    <span>Paper Craft 2012</span>
-                    <ul>
-                    <li><a href="catalog/paper_craft_j_scene_v10.pdf" rel="#pdf-2">Japanese Scene series</a></li>
-                    <li><a href="catalog/paper_craft_diorama_v10.pdf" rel="#pdf-3">Diorama series</a></li>
-                    <li><a href="catalog/paper_craft_petit_v10.pdf" rel="#pdf-4">Petit series</a></li>
-                    </ul>
-                </li>
-                <li><a href="catalog/paper_goods_2012_v10.pdf" rel="#pdf-5">Paper goods 2012</a></li>
-            <ul>
         </div>
     </div>
     <!-- div for map overlay -->
