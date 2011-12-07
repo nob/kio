@@ -1,6 +1,16 @@
 body {
 	font: normal 16px/16px Georgia,"Times New Roman",Times,serif;
 }
+noscript {
+	position: relative;
+	top: 0px;
+	display: block;
+	background-color: #fc891e;
+	color: #ffffff;
+	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	z-index: 999;
+	text-align: center;
+}
 div#debug {
 	position: absolute;
 	bottom: 0px;
@@ -42,6 +52,12 @@ h1#logo a, h1#logo img{
 .no-rgba h1#logo {	
 	-pie-background: rgba(255, 255, 255, 0.7);
 	behavior: url(PIE.php);
+}
+.no-js h1#logo {
+	background-color: #ffffff;
+	position: fixed;
+	top: 35px;
+	left: 50px;
 }
 h1#logo>a, h1#logo>a:focus, h1#logo>a:active {
     outline: none;
@@ -143,6 +159,16 @@ div#company-pane {
 	overflow-y: hidden;
 	border-right: 0px solid #000;
 }
+.no-js div#company-pane {
+	position:fixed;
+	top:20px;
+	left: 35%;
+	width: 65%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-right: 0px solid #000;
+}
 div#company-pane>div.pane-close {
 	position: relative;
 	top: 350px;
@@ -152,6 +178,9 @@ div#company-pane>div.pane-close {
 	background: url(../img/c-p-close.png);
 	display: block;
 	padding: 0px;
+}
+.no-js div#company-pane>div.pane-close {
+	display: none;
 }
 div#company-pane>div.pane-close:hover {
 	background: url(../img/c-p-close-l.png);
@@ -191,6 +220,16 @@ div#products-pane {
 	overflow-y: hidden;
 	border-top: 0px solid #000;
 }
+.no-js div#products-pane {
+	position:fixed;
+	top: 320px;
+	left: 0px;
+  	width: 380px;
+	height: 320px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border-top: 0px solid #000;
+}
 div#products-pane>div.pane-close {
 	position: absolute;
 	top: 0px;
@@ -202,6 +241,9 @@ div#products-pane>div.pane-close {
 div#products-pane>div.pane-close:hover {
 	background-image: url(../img/p-p-close-l.png);
 	cursor: pointer;
+}
+.no-js div#products-pane>div.pane-close {
+	display: none;
 }
 div.pane>.content{
 	margin: 20px 30px 10px;
@@ -279,6 +321,11 @@ ul#catalogs>li {
 	padding-right: 3%;
 /*	text-align: center;*/
 	text-decoration: none;
+}
+.no-js ul#catalogs>li {
+	display: list-item;
+	height: auto;
+	width: 100%;
 }
 .ie6 ul#catalogs>li,
 .ie7 ul#catalogs>li {
@@ -447,4 +494,9 @@ a#open-map:hover {
 .ie9 a#open-map:hover {
 	-pie-background: linear-gradient(#79AE48, #415E27);
 	behavior: url(PIE.php);
+}
+
+.no-js input#open-map,
+.no-js a#open-map{
+	display: none;
 }
