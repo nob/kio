@@ -1,7 +1,10 @@
 body {
 	font: normal 16px/16px Georgia,"Times New Roman",Times,serif;
 }
-noscript {
+.js div#noscript {
+	display: none;
+}
+.no-js div#noscript {
 	position: relative;
 	top: 0px;
 	display: block;
