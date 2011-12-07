@@ -173,14 +173,12 @@ div#company-pane {
 	border-right: 0px solid #000;
 }
 div#company-pane>div.pane-close {
-	position: relative;
+	position: absolute;
 	top: 350px;
 	left: 600px;
   	width: 50px;
 	height: 46px;
 	background: url(../img/c-p-close.png);
-	display: block;
-	padding: 0px;
 }
 .no-js div#company-pane>div.pane-close {
 	display: none;
@@ -212,7 +210,6 @@ div#inquiry-pane>div.pane-close:hover {
 	background-image: url(../img/i-p-close-l.png);
 	cursor: pointer;
 }
-
 div#products-pane {
 	position:fixed;
 	bottom: 0px;
@@ -241,12 +238,12 @@ div#products-pane>div.pane-close {
 	height: 46px;
 	background-image: url(../img/p-p-close.png);
 }
+.no-js div#products-pane>div.pane-close {
+	display: none;
+}
 div#products-pane>div.pane-close:hover {
 	background-image: url(../img/p-p-close-l.png);
 	cursor: pointer;
-}
-.no-js div#products-pane>div.pane-close {
-	display: none;
 }
 div.pane>.content{
 	margin: 20px 30px 10px;
