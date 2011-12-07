@@ -382,6 +382,11 @@ div.map-overlay iframe {
 	width: 100%;
 	border: 0px solid #333;
 }
+div.map-overlay a{
+	font: normal 17px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
+	color: #608B3A;
+	text-align: left;
+}
 div.pdf-overlay {
 }
 div.pdf-overlay .close {
