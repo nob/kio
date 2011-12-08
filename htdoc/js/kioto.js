@@ -25,30 +25,30 @@ jQuery(function($){
         fit_portrait        :   1,      //Portrait images will not exceed browser height
         fit_landscape       :   0,      //Landscape images will not exceed browser width
         slides              :   [           // Slideshow Images
-                                        {image : 'img/slide/slide-01.jpg?v=3'},
-                                        {image : 'img/slide/slide-02.jpg?v=3'},
-                                        {image : 'img/slide/slide-03.jpg?v=3'},
-                                        {image : 'img/slide/slide-04.jpg?v=3'},  
-                                        {image : 'img/slide/slide-05.jpg?v=3'},
-                                        {image : 'img/slide/slide-06.jpg?v=3'},
-                                        {image : 'img/slide/slide-07.jpg?v=3'},
-                                        {image : 'img/slide/slide-08.jpg?v=3'},
-                                        {image : 'img/slide/slide-09.jpg?v=3'},
-                                        {image : 'img/slide/slide-10.jpg?v=3'},
-                                        {image : 'img/slide/slide-11.jpg?v=3'},
-                                        {image : 'img/slide/slide-12.jpg?v=3'},
-                                        {image : 'img/slide/slide-13.jpg?v=3'},
-                                        {image : 'img/slide/slide-14.jpg?v=3'},
-                                        {image : 'img/slide/slide-15.jpg?v=3'},
-                                        {image : 'img/slide/slide-16.jpg?v=3'},
-                                        {image : 'img/slide/slide-17.jpg?v=3'},
-                                        {image : 'img/slide/slide-18.jpg?v=3'},
-                                        {image : 'img/slide/slide-19.jpg?v=3'},
-                                        {image : 'img/slide/slide-20.jpg?v=3'},  
-                                        {image : 'img/slide/slide-21.jpg?v=3'},
-                                        {image : 'img/slide/slide-22.jpg?v=3'},
-                                        {image : 'img/slide/slide-23.jpg?v=3'},
-                                        {image : 'img/slide/slide-24.jpg?v=3'}
+                                        {image : 'img/slide_c/slide-01.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-02.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-03.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-04.jpg?v=4'},  
+                                        {image : 'img/slide_c/slide-05.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-06.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-07.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-08.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-09.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-10.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-11.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-12.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-13.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-14.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-15.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-16.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-17.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-18.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-19.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-20.jpg?v=4'},  
+                                        {image : 'img/slide_c/slide-21.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-22.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-23.jpg?v=4'},
+                                        {image : 'img/slide_c/slide-24.jpg?v=4'}
                                 ]
         
     });
@@ -65,13 +65,13 @@ jQuery(function($){
     /*-------------------------------
      * Text shadow effect for IE.
      *-------------------------------*/
-    $("div#company-pane h2," +
-      "div#company-pane h3," +
-      "div#company-pane h4," +
-      "div#inquiry-pane h2," +
-      "div#products-pane h2," +
-      "input.button," + 
-      "a.button").textShadow(); 
+    $("div#company-pane h2," + 
+      "div#company-pane h3," + 
+      "div#company-pane h4," + 
+      "div#inquiry-pane h2," + 
+      "div#products-pane h2," + 
+      "input.button," +  
+      "a.button").textShadow();  
 
     /*-------------------------------
      * PDF (catelog file) overlay.
@@ -180,10 +180,12 @@ jQuery(function($){
         $(".menu-title").fadeTo(500, 1.00);
     });
 
+
     /*-------------------------------
      * Circle Expansion
      *-------------------------------*/    
     $("#menu>a").hover(circleExpand, circleBack);
+
 });
 
 
