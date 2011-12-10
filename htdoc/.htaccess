@@ -1,2 +1,6 @@
 Options -Indexes
 DirectoryIndex index.html
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kiotoinc\.com$ [NC]
+RewriteRule ^(.*)$ http://www.kiotoinc.com/$1 [R=301,L]
