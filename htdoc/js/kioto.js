@@ -3,7 +3,10 @@ jQuery(function($){
      * Debug info 
      *-------------------------------*/    
     //Output window size for developemnt purpose.
-    //$("#debug").text('window: ' + $(window).width() + ' x ' + $(window).height());
+    $("#debug").text('window: ' + $(window).width() + ' x ' + $(window).height());
+    $(window).resize(function() {
+        $("#debug").text('window: ' + $(window).width() + ' x ' + $(window).height());
+    });
 
     /*----------------------------------------
      * fullscreen background slideshow setup. 

@@ -1,3 +1,6 @@
+html {
+	overflow: hidden;
+}
 body {
 	font: normal 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
@@ -20,6 +23,7 @@ div#debug {
 	margin: 0 auto;
 	background-color: #000000;
 	color: #ffffff;
+	display: none;
 }
 
 /* ------------------------------
