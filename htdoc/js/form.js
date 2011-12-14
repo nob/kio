@@ -10,7 +10,7 @@ if (document.location.search == '?success=1') {
 }
 
 jQuery(function($){
-    //input data validation.
+    //input data validation setup.
     vapi = $('form#inquiry-form').validator({
             position: 'bottom center', 
             offset: [-5, 13],
@@ -20,7 +20,7 @@ jQuery(function($){
 
     //custom required field error message.
     $.tools.validator.localize("en", {
-        '[required]'    : 'Please complete this field.'
+        '[required]'    : 'Please fill out this field.'
     });
 
     //custom validation func for select box (subject)
@@ -41,7 +41,6 @@ jQuery(function($){
             return true;
         }
         var file = input.files[0];
-
         //This does not work stablely in IE...
         /*
         if (jQuery.browser.msie) {
@@ -99,6 +98,9 @@ jQuery(function($){
     });
 
     $('form#inquiry-form button#send').click(function(event){
+        vapi.data('validator').reset();
+        init_subject_field();
+
         if (!Modernizr.input.placeholder) {
             //remove placeholder text before validation.
             $('form#inquiry-form input[placeholder]').each(function(){
@@ -108,8 +110,6 @@ jQuery(function($){
                 }
             });
         }
-
-        vapi.data('validator').reset();
     });
 
     //form data submission.
@@ -135,14 +135,33 @@ jQuery(function($){
         $("select#subject").css("color", "#000000");
     }
 
-    $("select#subject").focus(function(){
-        $("select#subject").css("font-style", "normal");
-        $("select#subject").css("color", "#000000");
-    });
+    init_subject_field();
+    //HTML 5 placeholder fallback support.
+    if (!Modernizr.input.placeholder) {
+        $('form#inquiry-form input[placeholder]').each(function(){
+            var placeholderText = $(this).attr('placeholder');
+            $(this).attr('value',placeholderText);
+            $(this).addClass('placeholder');
+        });
+    } 
 
+    //Help text tooltip
+    $("img.help").tooltip({
+        relative: true, 
+        effect:'slide', 
+        offset: [10, 0], 
+        position:'bottom center'
+    });
+});
+
+function init_subject_field() {
+    init_fields();
     $("select#subject").change(function(){
-        //reset current validated state.
-        vapi.data('validator').reset();
+        //reset current error messages for dynamic 3 fields.
+        vapi.data('validator').reset($('#ordersheet'));
+        vapi.data('validator').reset($('#note'));
+        vapi.data('validator').reset($('#inq-message'));
+        init_fields(); //reset causes removing all functions binded to the fields...
 
         $('form#inquiry-form .field').each(function(){
             $(this).css('border-color', '#afacac');
@@ -159,7 +178,7 @@ jQuery(function($){
             $("select#subject").css("font-style", "normal");
             $("select#subject").css("color", "#000000");
         }
-        
+
         //Rules for hiding/showing fields.
         if (index == 2) {
             $("li#foli-ordersheet").show();
@@ -190,7 +209,13 @@ jQuery(function($){
             }
         }
     });
-    
+}
+function init_fields() {
+    $("select#subject").focus(function(){
+        $("select#subject").css("font-style", "normal");
+        $("select#subject").css("color", "#000000");
+    });
+
     //field focus hilighting
     var org_color = '#F7E8C5';
     var hi_color = '#ffffff'; 
@@ -209,27 +234,17 @@ jQuery(function($){
         $(this).parent().prev().css('font-size', org_fontsize);
     });
 
-    //Help text tooltip
-    $("img.help").tooltip({
-    //$("#title232").tooltip({
-        relative: true, 
-        effect:'slide', 
-        offset: [10, 0], 
-        position:'bottom center'
-    });
 
     //HTML 5 placeholder fallback support.
     if (!Modernizr.input.placeholder) {
         $('form#inquiry-form input[placeholder]').each(function(){
             var placeholderText = $(this).attr('placeholder');
 
-            $(this).attr('value',placeholderText);
-            $(this).addClass('placeholder');
-
             $(this).focus(function() {
                 if($(this).val() == placeholderText) {
                     $(this).attr('value','');
                     $(this).removeClass('placeholder');
+                    set_end($(this).get(0));
                 }
             });
 
@@ -247,7 +262,7 @@ jQuery(function($){
         if (! $(this).val().match(/^http:\/\//i) && 
             $(this).val() != $(this).attr('placeholder')) {
             $(this).val('http://' + $(this).val());
-            SetEnd($(this).get(0));
+            set_end($(this).get(0));
         }
     });
     $("form#inquiry-form input#r-url").blur(function() {
@@ -258,20 +273,21 @@ jQuery(function($){
             $(this).val('http://' + $(this).val());
         }
     });
-});
+}
 
-function SetEnd(txt) {  
-  if (txt.createTextRange) {  
+//move cursor to the end of text.
+function set_end(input) {  
+  if (input.createTextRange) {  
    //IE  
-   var FieldRange = txt.createTextRange();  
-   FieldRange.moveStart('character', txt.value.length);  
+   var FieldRange = input.createTextRange();  
+   FieldRange.moveStart('character', input.value.length);  
    FieldRange.collapse();  
    FieldRange.select();  
-   }  
+  }  
   else {  
    //Firefox and Opera  
-   txt.focus();  
-   var length = txt.value.length;  
-   txt.setSelectionRange(length, length);  
+   input.focus();  
+   var length = input.value.length;  
+   input.setSelectionRange(length, length);  
   }  
 }   
