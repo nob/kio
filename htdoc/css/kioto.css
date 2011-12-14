@@ -213,7 +213,7 @@ div#inquiry-pane {
 	top:0px;
 	right: 0px;
   	width: 0%;
-	width: 650px;
+/*	width: 650px;*/
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
