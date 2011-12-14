@@ -3,6 +3,22 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+/*------------------------------------------------------------------------------- 
+  Only file field could be needed  after server side input data validation 
+  (in case '.exe' file is uploaded, or 5MB< file is uploaded), so hide other field.
+---------------------------------------------------------------------------------*/ 
+form li#fo6li237,
+form li#fo6li232,
+form li#fo6li8,
+form li#fo6li228,
+form li#fo6li1,
+form li#fo6li111,
+form li#fo6li235 {
+    display:none;
+}
+/*-------------------------------------------------------------------------------*/
+
 #header {
     display: none;
 }
