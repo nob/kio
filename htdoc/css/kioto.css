@@ -730,8 +730,8 @@ form#inquiry-form img.help:hover {
 	display:none;
 	background-color: #ffffff;
 	border: 2px solid #000000;
-	width:200px;
-	padding: 7px 10px;
+	width:205px;
+	padding: 5px 3px;
 	margin: 0 0 !important;
 	font: normal 17px/17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif !important; 
 	color:#000 !important;
@@ -752,7 +752,7 @@ form#inquiry-form img.help:hover {
 	/* positioning */
 	position:absolute;
 	top:-17px;
-	left:100px;
+	left:110px;
 }
 /* error message */
 .error {
