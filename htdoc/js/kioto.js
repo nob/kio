@@ -3,10 +3,12 @@ jQuery(function($){
      * Debug info 
      *-------------------------------*/    
     //Output window size for developemnt purpose.
-    $("#debug").text('window: ' + $(window).width() + ' x ' + $(window).height());
-    $(window).resize(function() {
-        $("#debug").text('window: ' + $(window).width() + ' x ' + $(window).height());
-    });
+    if($('#jsdebug').attr('id') == 'jsdebug') { 
+        $("#jsdebug").text('window: ' + $(window).width() + ' x ' + $(window).height());
+        $(window).resize(function() {
+            $("#jsdebug").text('window: ' + $(window).width() + ' x ' + $(window).height());
+        });
+    }
 
     /*----------------------------------------
      * fullscreen background slideshow setup. 

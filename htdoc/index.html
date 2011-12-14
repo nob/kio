@@ -28,7 +28,17 @@
     <script type="text/javascript" src="js/kioto.js"></script>
 </head>
 <body>
-    <div id="debug"><p></p></div>
+<?php
+include 'config.php';
+if (DEBUG) {
+?>
+    <div id="debug">
+        <p>server address: <?php echo $_SERVER['SERVER_ADDR']; ?></p>
+        <p id="jsdebug"></p>
+    </div>
+<?php
+}
+?>
     <div id="noscript">Please enable Javascript on your web browser to display this website correctly.</div>
     <!-- Curtain for initial page load -->
     <div id="blind"></div>

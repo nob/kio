@@ -19,11 +19,10 @@ body {
 }
 div#debug {
 	position: absolute;
-	bottom: 0px;
+	top: 0px;
 	margin: 0 auto;
 	background-color: #000000;
 	color: #ffffff;
-	display: none;
 }
 
 /* ------------------------------
