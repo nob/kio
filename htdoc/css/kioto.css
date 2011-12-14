@@ -1,5 +1,5 @@
 body {
-	font: normal 16px/16px Georgia,"Times New Roman",Times,serif;
+	font: normal 16px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 .js div#noscript {
 	display: none;
@@ -21,6 +21,10 @@ div#debug {
 	background-color: #000000;
 	color: #ffffff;
 }
+
+/* ------------------------------
+ *  Black Curtain (blind)
+ * ------------------------------*/
 div#blind {
 	width: 100%;
 	height: 100%;
@@ -32,6 +36,11 @@ div#blind {
 	bottom:0;
 	left:0;	
 }
+
+
+/* ------------------------------
+ *  Main Controller (Logo & Menu)
+ * ------------------------------*/
 div#main-ctlr {
 	position:relative;
 	top:100px;
@@ -39,6 +48,10 @@ div#main-ctlr {
 	width: 450px;
 	z-index:200;
 }
+
+/* ------------------------------
+ *  Logo
+ * ------------------------------*/
 h1#logo{
   	margin: 0 auto;
    	width:250px;
@@ -73,6 +86,10 @@ h1#logo img {
 h1#logo img:focus, h1#logo img:active {
     outline: none;
 }
+
+/* ------------------------------
+ *  Menu
+ * ------------------------------*/
 div#menu {
 	zoom: 1;
 	position: relative;
@@ -139,6 +156,10 @@ div#menu>a span.menu-title{
 	position: relative;
 	top: -10px;
 }
+
+/* --------------------------
+ *  Panels
+ * --------------------------*/
 div.pane {
 	color:#fff;
 	padding: 0px 0px;
@@ -159,7 +180,7 @@ div#company-pane {
 /*	width: 650px;*/
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: auto;
 	border-right: 0px solid #000;
 }
 .no-js div#company-pane {
@@ -169,7 +190,7 @@ div#company-pane {
 	width: 65%;
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
 	border-right: 0px solid #000;
 }
 div#company-pane>div.pane-close {
@@ -192,10 +213,10 @@ div#inquiry-pane {
 	top:0px;
 	right: 0px;
   	width: 0%;
-/*	width: 650px;*/
+	width: 650px;
 	height: 100%;
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: auto;
 	border-left: 0px solid #000;
 }
 div#inquiry-pane>div.pane-close {
@@ -233,7 +254,7 @@ div#products-pane {
 div#products-pane>div.pane-close {
 	position: absolute;
 	top: 0px;
-	left: 300px;
+	left: 400px;
   	width: 50px;
 	height: 46px;
 	background-image: url(../img/p-p-close.png);
@@ -245,6 +266,10 @@ div#products-pane>div.pane-close:hover {
 	background-image: url(../img/p-p-close-l.png);
 	cursor: pointer;
 }
+
+/* --------------------------
+ *  Panel contents
+ * --------------------------*/
 div.pane>.content{
 	margin: 20px 30px 10px;
 	color: #f7e8c5;
@@ -259,7 +284,7 @@ div#inquiry-pane>div.content {
 div.pane h2 {
 	font: bold 38px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
-	margin: 19px 0;
+	margin: 15px 0px 10px 0px;
 }
 div#company-pane h2 {
 	text-shadow: 3px 2px 0px #415e27;
@@ -278,7 +303,6 @@ div#company-pane div#messages {
 	margin-bottom: 50px;
 }
 div#messages p {
-	margin-top: 1em;
 	font-size: 22px;
 	line-height: 28px;
 }
@@ -297,17 +321,19 @@ div#company-pane div.info p{
 	margin-left: 8px;
 }
 div#inquiry-pane h2{
-	text-shadow: 3px 4px 2px #5e6257;
+	text-shadow: 3px 3px 1px #545652;
 }
 div#inquiry-pane h3{
-	font: normal 23px/28px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
-	margin-bottom: 15px;
+	font: normal 24px/28px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
+	margin-bottom: 25px;
 }
 div#products-pane h2{
 	text-shadow: 3px 4px 2px #42275E;
 }
 ul#catalogs {
-	margin: 25px 6%;
+	margin: 25px 4%;
+	min-width: 650px;
+	padding: 0px;
 }
 ul#catalogs>li {
 	font: normal 29px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
@@ -319,7 +345,7 @@ ul#catalogs>li {
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 3%;
-/*	text-align: center;*/
+	/*text-align: center;*/
 	text-decoration: none;
 }
 .no-js ul#catalogs>li {
@@ -334,6 +360,7 @@ ul#catalogs>li {
 }
 ul#catalogs>li>ul {
 	margin-left: 10%;
+	padding: 0px 0px 0px 10px;
 }
 ul#catalogs>li>ul>li {
 	font: normal 24px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
@@ -349,7 +376,9 @@ ul#catalogs li>a:hover {
 	color: #9062be;
 }
 
-/*overlay*/
+/* ---------------------------
+ *  overlays (modal windows)
+ * ---------------------------*/
 div.overlay {
 	background-color: #000000;
 	border: 6px solid #000000;
@@ -367,12 +396,12 @@ div.map-overlay div.wrap-overlay {
 	width: 300px;
 	height: 330px
 }
-/* close button positioned on upper right corner */
+/* close button positioned on upper left corner */
 div.map-overlay .close {
 	background-image:url(../img/close-s.png);
 	position:absolute;
-	right:-15px;
-	top:-15px;
+	left:-10px;
+	top:-10px;
 	cursor:pointer;
 	height:28px;
 	width:28px;
@@ -408,7 +437,10 @@ div.pdf-overlay div.footer {
 	background-color: #000000;
 }
 
-/* button */
+/* ---------------------------
+ *  Buttons
+ * ---------------------------*/
+button,
 input.button, 
 a.button {
 	display: block;
@@ -425,7 +457,7 @@ a.button {
 	text-decoration: none;
 	outline: none;
 }
-
+button:active,
 input.button:active,
 a.button:active {
 	position: relative;
@@ -438,7 +470,7 @@ a.button:active {
 input.download,
 a.download {
 	background: #42275E;
-	background: linear-gradient(#643B8F, #42275E);
+	background: linear-gradient(top, #643B8F, #42275E);
 	border: 1px solid #42275E;
 	border-top: 1px solid #643B8F;
 	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
@@ -447,25 +479,25 @@ a.download {
 }
 .ie9 input.download,
 .ie9 a.download {
-	-pie-background: linear-gradient(#643B8F, #42275E);
+	-pie-background: linear-gradient(top, #643B8F, #42275E);
 	behavior: url(PIE.php);
 }
 input.download:hover,
 a.download:hover {
 	background: #7D49B2;
-	background: linear-gradient(#7D49B2, #42275E);
+	background: linear-gradient(top,#7D49B2, #42275E);
 	border-top: 1px solid #7D49B2;
 }
 .ie9 input.download:hover,
 .ie9 a.download:hover {
-    -pie-background: linear-gradient(#7D49B2, #42275E);
+    -pie-background: linear-gradient(top,#7D49B2, #42275E);
 	behavior: url(PIE.php);
 }
 
 input#open-map,
 a#open-map {
 	background: #608B3A;
-	background: linear-gradient(#608B3A, #415E27);
+	background: linear-gradient(top,#608B3A, #415E27);
 	border: 1px solid #415E27;
 	border-top: 1px solid #608B3A;
 	width: 50px;
@@ -479,7 +511,7 @@ a#open-map {
 
 .ie9 input#open-map,
 .ie9 a#open-map {
-	-pie-background: linear-gradient(#608B3A, #415E27);
+	-pie-background: linear-gradient(top,#608B3A, #415E27);
 	behavior: url(PIE.php);
 }
 .ie6 input#open-map,
@@ -492,16 +524,288 @@ a#open-map {
 input#open-map:hover,
 a#open-map:hover {
 	background: #79AE48;
-	background: linear-gradient(#79AE48, #415E27);
+	background: linear-gradient(top,#79AE48, #415E27);
 	border-top: 1px solid #79AE48;
 }
 .ie9 input#open-map:hover,
 .ie9 a#open-map:hover {
-	-pie-background: linear-gradient(#79AE48, #415E27);
+	-pie-background: linear-gradient(top,#79AE48, #415E27);
 	behavior: url(PIE.php);
 }
-
 .no-js input#open-map,
 .no-js a#open-map{
 	display: none;
 }
+
+button#send {
+	background: #181916;
+	background: linear-gradient(top,#363831, #181916);
+	border: 1px solid #181916;
+	border-top: 1px solid #363831;
+	width: 75px;
+	height: 32px;
+	display: inline-block;
+	font: normal 20px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	color: #f7e8c5;
+	margin: 0px auto;
+	padding: 0px 2px 9px;
+}
+.ie9 button#send {
+	-pie-background: linear-gradient(top,#363831, #181916);
+	behavior: url(PIE.php);
+}
+.ie6 button#send, 
+.ie7 button#send {
+	zoom: 1;
+	display: inline;
+}
+button#send:hover {
+	background: #52554B;
+	background: linear-gradient(top,#52554B, #181916);
+	border-top: 1px solid #52554B;
+}
+.ie9 button#send:hover {
+	-pie-background: linear-gradient(top,#52554B, #181916);
+	behavior: url(PIE.php);
+}
+
+/* ---------------------------
+ *  Form elements
+ * ---------------------------*/
+div#inquiry-pane hr{
+	margin-bottom: 10px;
+}
+div#inquiry-pane iframe {
+	width: 100%;
+	border: none;	
+}
+form#inquiry-form {
+	margin-top: 20px;
+}
+form#inquiry-form ul {
+	padding: 0px 0px 0px 0px;
+}
+form#inquiry-form li {
+	padding: 0px 0px;
+	margin: 0px 0px 14px 0px;
+	zoom:1;
+	overflow: hidden;
+	list-style-type: none;
+}
+form#inquiry-form li.buttons{
+	height:40px;
+	margin-bottom: 0px;
+}
+form#inquiry-form li:after{
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+form#inquiry-form li#foli-note {
+	display: none;
+}
+form#inquiry-form li#foli-ordersheet {
+	display: none;
+}
+form#inquiry-form li.hide {
+	display: none;
+}
+form#inquiry-form div.column-field {
+	width: 130px;
+	margin-right: 6px;
+}
+form#inquiry-form div {
+	float: left;	
+	padding: 0px 0px;
+	margin: 0px 0px;
+	border-width: 0px;
+	width: 340px;
+}
+form#inquiry-form label {
+	float: left;
+	padding: 0px 10px 0px 0px;
+	margin: 0px 0px;
+	border-width: 0px;
+	width: 210px;
+	text-align: right;
+	color: #f7e8c5;
+	font: normal 22px/22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+}
+form#inquiry-form select>option:first-child,
+form#inquiry-form input.placeholder {
+   color: #918f8f;
+   font-weight: normal;
+   font-style: italic;
+}
+form#inquiry-form input::-webkit-input-placeholder {
+	color: #918f8f;
+	font-weight: normal;
+	font-style: italic;
+}
+form#inquiry-form input:-moz-placeholder {
+	color: #918f8f;
+	font-weight: normal;
+	font-style: italic;
+}
+form#inquiry-form input:-ms-placeholder  {
+	color: #918f8f;
+	font-weight: normal;
+	font-style: italic;
+}
+form#inquiry-form .field {
+	font: normal 15px/15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    border: 2px solid #afacac;
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-radius: 6px;
+    margin: 0px 0px 0px 0px;
+    color: #000;
+    background-color: #F7E8C5;
+    /** Don't apply PIE.htc to Select BOX just for border-radius!! **/
+    /** User CAN NOT SELECT select box option on IE if you apply it. **/
+    /*behavior: url(PIE.php);  */
+}
+form#inquiry-form .field:focus {
+	background-color: #ffffff;
+}
+form#inquiry-form .text, 
+form#inquiry-form .textarea {
+	width: 360px;
+	padding: 3px;
+}
+.ie6 form#inquiry-form .text,
+.ie7 form#inquiry-form .text,
+.ie6 form#inquiry-form .textarea,
+.ie7 form#inquiry-form .textarea {
+	padding: 1px;
+}
+form#inquiry-form input.file {
+	/*height: 25px;*/
+	background-color: #F7E8C5;
+	/*color:#F7E8C5;	*/
+	font: normal 16px/16px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+}
+form#inquiry-form input.medium {
+	width: 16em;
+}
+form#inquiry-form input.large {
+	width: 22em;
+}
+form#inquiry-form input.fn {
+	width: 8em;
+}
+form#inquiry-form input.ln {
+	width: 12em;
+}
+form#inquiry-form select.large {
+	width: 22em;
+}
+form#inquiry-form textarea.small {
+	height: 6em !important;
+}
+form#inquiry-form textarea.medium {
+	height: 9em;
+}
+form#inquiry-form button {
+	margin-left: 480px;
+}
+form#inquiry-form p.instruct {
+	margin: 5px 0px 0px;
+	color: #F7E8C5;
+	font: italic 16px/18px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+}
+form#inquiry-form img.help {
+	opacity: 0.6;
+	vertical-align: middle;
+	height: 22px;
+	width: 22px;
+}
+form#inquiry-form img.help:hover {
+	opacity: 1.0;
+}
+.tooltip {
+	display:none;
+	background-color: #ffffff;
+	border: 2px solid #000000;
+	width:200px;
+	padding: 7px 10px;
+	margin: 0 0 !important;
+	font: normal 17px/17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif !important; 
+	color:#000 !important;
+	box-shadow:0px 0px 5px #F7E8C5;
+	border-radius:4px;
+	z-index: 300;
+	/** Don't apply PIE.htc to tooltip just for border-radius and box-shadow!! **/
+	/** Tooltip will never appear on IE7/IE8 if you apply it. **/
+/*	behavior: url(PIE.php);*/
+}
+.tooltip em{
+	display:block;
+	width:0;
+	height:0;
+	border:10px solid;
+	border-color: transparent transparent #ffffff;
+
+	/* positioning */
+	position:absolute;
+	top:-17px;
+	left:100px;
+}
+/* error message */
+.error {
+	/* supply height to ensure consistent positioning for every browser */
+	height:17px;
+	background-color:#D6452B;
+	border: 1px solid #e39486;
+	font: normal 17px/17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	color:#000;
+	padding:2px 10px;
+	margin-left:-2px;
+	border-radius:4px;
+	box-shadow:0px 0px 5px #F7E8C5;
+	/* positioning */
+	position:absolute;
+}
+/** Don't apply PIE.htc to error bubbles on IE7 just for border-radius and box-shadow!!The error bubbles will be broken if you apply it. **/
+.ie8 .error {
+	behavior: url(PIE.php);
+}
+.error p {
+	margin: 0 0;
+}
+/* pure CSS arrow */
+.error em {
+	display:block;
+	width:0;
+	height:0;
+	border:10px solid;
+	border-color: transparent transparent #D6452B;
+
+	/* positioning */
+	position:absolute;
+	top:-17px;
+	left:60px;
+}
+
+div#thx-inquiry-msg {
+	display: none;
+	color: #92D355;
+	font: bold 2em/2em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	position:fixed;
+	top:200px;
+	margin: 0 auto;
+	width: 450px;
+	z-index:200;
+	text-align:center;
+    padding: 10px 20px;
+    border-radius: 25px;
+  	z-index:250;
+  	behavior: url(PIE.php);
+}
+.rgba div#thx-inquiry-msg{
+  	background: rgba(0, 0, 0, 0.9);
+ }
+.no-rgba div#thx-inquiry-msg {	
+	-pie-background: rgba(0, 0, 0, 0.9);
+}
+

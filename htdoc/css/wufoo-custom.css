@@ -1,6 +1,7 @@
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- Wufoo form customization (overwriting Wufoo's stylesheet)
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  This css is linked from Wufoo form html and overwrites Wufoo original css.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 #header {
     display: none;

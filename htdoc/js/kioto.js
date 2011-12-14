@@ -4,6 +4,7 @@ jQuery(function($){
      *-------------------------------*/    
     //Output window size for developemnt purpose.
     //$("#debug").text('window: ' + $(window).width() + ' x ' + $(window).height());
+
     /*----------------------------------------
      * fullscreen background slideshow setup. 
      *----------------------------------------*/    
@@ -65,13 +66,15 @@ jQuery(function($){
     /*-------------------------------
      * Text shadow effect for IE.
      *-------------------------------*/
-    $("div#company-pane h2," + 
-      "div#company-pane h3," + 
-      "div#company-pane h4," + 
-      "div#inquiry-pane h2," + 
-      "div#products-pane h2," + 
-      "input.button," +  
-      "a.button").textShadow();  
+    if ( jQuery.browser.msie  && jQuery.browser.version < 10) {
+        $("div#company-pane h2," +
+          "div#company-pane h3," +
+          "div#company-pane h4," +
+          "div#inquiry-pane h2," +
+          "div#products-pane h2," +
+          "input.button," +
+          "a.button").textShadow();
+    }
 
     /*-------------------------------
      * PDF (catelog file) overlay.
