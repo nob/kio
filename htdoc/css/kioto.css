@@ -601,10 +601,11 @@ form#inquiry-form li {
 form#inquiry-form li.buttons{
 	height:40px;
 	margin-bottom: 0px;
+	position: relative;
 }
 form#inquiry-form li:after{
     content: ""; 
-    display: block; 
+    display: block;
     clear: both;
 }
 form#inquiry-form li#foli-note {
@@ -792,26 +793,37 @@ form#inquiry-form img.help:hover {
 	top:-17px;
 	left:60px;
 }
-
+.waiting {
+	display: none;
+	width: 24px;
+	height: 24px;
+	background:url(../img/waiting.gif) no-repeat;
+}
+form#inquiry-form .waiting {
+	position: absolute;
+	top: 6px;
+	left: 438px;
+	margin: 0px 0px;
+}
 div#thx-inquiry-msg {
 	display: none;
-	color: #92D355;
-	font: bold 2em/2em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	color: #F7E8C5;
+	font: normal 2em/1.4em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	position:fixed;
 	top:200px;
 	margin: 0 auto;
 	width: 450px;
 	z-index:200;
 	text-align:center;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 25px;
   	z-index:250;
   	behavior: url(PIE.php);
 }
 .rgba div#thx-inquiry-msg{
-  	background: rgba(0, 0, 0, 0.9);
+  	background: rgba(0, 0, 0, 0.85);
  }
 .no-rgba div#thx-inquiry-msg {	
-	-pie-background: rgba(0, 0, 0, 0.9);
+	-pie-background: rgba(0, 0, 0, 0.85);
 }
 

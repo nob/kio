@@ -32,11 +32,11 @@ jQuery(function($){
     //custom validation func for KIOTO,inc. ordersheet file.
     $.tools.validator.fn("#ordersheet", function() {
         input = $('#ordersheet').get(0);
-        console.log(input.files);
+        //console.log(input.files);
         if (! input.files) {
             return true;
         }
-        console.log(input.files[0]);
+        //console.log(input.files[0]);
         if (! input.files[0]) {
             return true;
         }
@@ -64,6 +64,8 @@ jQuery(function($){
     $("form#inquiry-form").bind("onFail", function(e, errors) {
         //input field border color change. 
         if (e.originalEvent.type == 'submit') {
+            $(".waiting").hide();               
+            
             //we are only doing stuff when the form is submitted.
             //loop through Error objects and add the border color.
             $.each(errors, function()  {
@@ -98,6 +100,7 @@ jQuery(function($){
     });
 
     $('form#inquiry-form button#send').click(function(event){
+        $(".waiting").show();               
         vapi.data('validator').reset();
         init_subject_field();
 
