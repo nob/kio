@@ -144,7 +144,7 @@ if (DEBUG === true) {
     <div id="pdf-1" class="overlay pdf-overlay"> 
         <a class="close"></a>
         <div class="wrap-overlay">
-            <iframe class="pdf-frame" src=""></iframe>
+            <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
             </div> 
@@ -153,7 +153,7 @@ if (DEBUG === true) {
     <div id="pdf-2" class="overlay pdf-overlay"> 
         <a class="close"></a>
         <div class="wrap-overlay">
-            <iframe class="pdf-frame" src=""></iframe>
+            <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
             </div> 
@@ -162,7 +162,7 @@ if (DEBUG === true) {
     <div id="pdf-3" class="overlay pdf-overlay"> 
         <a class="close"></a>
         <div class="wrap-overlay">
-            <iframe class="pdf-frame" src=""></iframe>
+            <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
             </div> 
@@ -171,7 +171,7 @@ if (DEBUG === true) {
     <div id="pdf-4" class="overlay pdf-overlay"> 
         <a class="close"></a>
         <div class="wrap-overlay">
-            <iframe class="pdf-frame" src=""></iframe>
+            <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
             </div> 
@@ -180,7 +180,7 @@ if (DEBUG === true) {
     <div id="pdf-5" class="overlay pdf-overlay"> 
         <a class="close"></a>
         <div class="wrap-overlay">
-            <iframe class="pdf-frame" src=""></iframe>
+            <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
             </div> 

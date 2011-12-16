@@ -6,7 +6,7 @@ if (document.location.search == '?success=1') {
     var msg_left_pos = 
             ($(parent.window).width() / 2) - (parent.$('div#thx-inquiry-msg').width() / 2);
     parent.$('div#thx-inquiry-msg').css('left', msg_left_pos);
-    parent.$('div#thx-inquiry-msg').fadeIn(500).delay(4000).fadeOut(900);
+    parent.$('div#thx-inquiry-msg').fadeIn(500).delay(4000).fadeOut(1500);
 }
 
 jQuery(function($){
