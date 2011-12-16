@@ -202,13 +202,14 @@ div#company-pane>div.pane-close {
 	left: 600px;
   	width: 50px;
 	height: 46px;
-	background: url(../img/c-p-close.png);
+	background: url(../img/pane-close.png) no-repeat;
+	background-position: 0 0; 
 }
 .no-js div#company-pane>div.pane-close {
 	display: none;
 }
 div#company-pane>div.pane-close:hover {
-	background: url(../img/c-p-close-l.png);
+	background-position: 0 -96px;
 	cursor: pointer;
 }
 div#inquiry-pane {
@@ -228,10 +229,11 @@ div#inquiry-pane>div.pane-close {
 	left: 0px;
   	width: 50px;
 	height: 46px;
-	background-image: url(../img/i-p-close.png);
+	background: url(../img/pane-close.png) no-repeat;
+	background-position: 0 -192px;
 }
 div#inquiry-pane>div.pane-close:hover {
-	background-image: url(../img/i-p-close-l.png);
+	background-position: 0 -288px; 
 	cursor: pointer;
 }
 div#products-pane {
@@ -260,13 +262,14 @@ div#products-pane>div.pane-close {
 	left: 400px;
   	width: 50px;
 	height: 46px;
-	background-image: url(../img/p-p-close.png);
+	background: url(../img/pane-close.png) no-repeat;
+	background-position: 0 -384px; 
 }
 .no-js div#products-pane>div.pane-close {
 	display: none;
 }
 div#products-pane>div.pane-close:hover {
-	background-image: url(../img/p-p-close-l.png);
+	background-position: 0 -480px; 
 	cursor: pointer;
 }
 
