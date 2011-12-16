@@ -5,3 +5,10 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^kiotoinc\.com$ [NC]
 RewriteRule ^(.*)$ http://www.kiotoinc.com/$1 [R=301,L]
 
+#Compression for text contents.
+<ifModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>
+
+#charset for html / plaintext
+AddDefaultCharset UTF-8
