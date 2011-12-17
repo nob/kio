@@ -1,14 +1,45 @@
 Options -Indexes
 DirectoryIndex index.php
 
+#Charset for html / plaintext
+AddDefaultCharset UTF-8
+
 RewriteEngine on
+
+#Require 'www' subdomain.
 RewriteCond %{HTTP_HOST} ^kiotoinc\.com$ [NC]
 RewriteRule ^(.*)$ http://www.kiotoinc.com/$1 [R=301,L]
 
-#Compression for text contents.
+#Compress text contents.
 <ifModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 </ifModule>
 
-#charset for html / plaintext
-AddDefaultCharset UTF-8
+#---------------------------------------------------------------
+# Cache-Control Headers. 
+# Leverage browser & proxy caching to speed up the site!
+# (1 hour: 3600, 1 day: 86400, 1 week: 604800, 1 month: , 1 year: 29030400)
+#---------------------------------------------------------------
+<ifModule mod_headers.c>
+    # 1 YEAR cache for all static contents 
+    <FilesMatch "\.(txt|css|jpg|jpeg|png|gif|swf|flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+    Header set Cache-Control "max-age=29030400, public"
+    </FilesMatch>
+
+    #1 YEAR cache for js file, but Google recommends to disable proxy caching 
+    # for resources that set cookies. (ref: http://goo.gl/YAyS). 
+    <FilesMatch "\.js$">
+    Header set Cache-Control "max-age=29030400, private"
+    </FilesMatch>
+
+    # NEVER allow caching for dinamicaly generated contents.
+    <FilesMatch "\.(html|htm|php|cgi|pl)$">
+    Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+    </FilesMatch>
+</ifModule>
+#Ignore version number suffix(e.g. 'image-v24.jpg') in filename, which force browsers 
+#to forget their cache and to download updated files in server.
+RewriteRule ^(.+)-v([1-9]+)\.(.+)$ /$1.$3 [L]
+#---------------------------------------------------------------
+
+
