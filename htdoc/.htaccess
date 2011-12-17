@@ -18,18 +18,18 @@ RewriteRule ^(.*)$ http://www.kiotoinc.com/$1 [R=301,L]
 #---------------------------------------------------------------
 # Cache-Control Headers. 
 # Leverage browser & proxy caching to speed up the site!
-# (1 hour: 3600, 1 day: 86400, 1 week: 604800, 1 month: , 1 year: 29030400)
+# (1 hour: 3600, 1 day: 86400, 1 week: 604800, 30days:2592000 , 1 year: 31536000)
 #---------------------------------------------------------------
 <ifModule mod_headers.c>
     # 1 YEAR cache for all static contents 
     <FilesMatch "\.(txt|css|jpg|jpeg|png|gif|swf|flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
-    Header set Cache-Control "max-age=29030400, public"
+    Header set Cache-Control "max-age=31536000, public"
     </FilesMatch>
 
     #1 YEAR cache for js file, but Google recommends to disable proxy caching 
     # for resources that set cookies. (ref: http://goo.gl/YAyS). 
     <FilesMatch "\.js$">
-    Header set Cache-Control "max-age=29030400, private"
+    Header set Cache-Control "max-age=31536000, private"
     </FilesMatch>
 
     # NEVER allow caching for dinamicaly generated contents.
