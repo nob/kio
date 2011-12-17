@@ -1,6 +1,9 @@
 Options -Indexes
 DirectoryIndex index.php
 
+ErrorDocument 404 /404.html 
+ErrorDocument 403 /404.html 
+
 #Charset for html / plaintext
 AddDefaultCharset UTF-8
 
