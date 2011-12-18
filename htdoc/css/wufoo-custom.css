@@ -25,12 +25,14 @@ form li#fo6li235 {
 form li label.desc {
 	width: 48% !important;
 	text-align: right;
+	font: normal 1.5em/1.5em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif !important;
 }
 form li div {
 	width: 45% !important;
 }
 form li p.instruct {
 	width: 100px !important;
+	font: normal 1.0em/1.0em 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif !important;
 }
 /* button*/
 input#saveForm {
