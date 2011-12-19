@@ -1,0 +1,16 @@
+User-agent: *
+Sitemap: http://www.kiotoinc.com/sitemap.xml
+Allow: /
+Disallow: /index.php
+Disallow: /config.default.php
+Disallow: /config.php
+Disallow: /form.html
+Disallow: /map.html
+Disallow: /404.html
+Disallow: /PIE.php
+Disallow: /catalog/
+Disallow: /css/
+Disallow: /htdoc.esproj/
+Disallow: /img/
+Disallow: /js/
+
