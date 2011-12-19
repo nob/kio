@@ -127,7 +127,7 @@ jQuery(function($){
      $('#open-map').overlay({
         close: '.close',
         left: 250, 
-        top: 129,
+        top: 65,
         closeOnClick: true,
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
