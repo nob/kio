@@ -10,6 +10,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Our hope is to introduce a time-honored beauty to people in the U.S. by faithfully preserving Japanese traditions, the “waza (art)” and “kokoro (soul)” of Kyoto culture. We invite you to enjoy authentic elements of Japan in your daily lives." />
     <meta name="keywords" content="kimono, robe, Japanese, Japan, Kyoto, paper craft, paper, washi, miniature model, Japanese traditions, art, waza, kokoro" />
+    <meta name="google-site-verification" content="q6AIKs0v5j0xUe_MAqC4zN3bil2HhHoP23PAGInrudQ" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
