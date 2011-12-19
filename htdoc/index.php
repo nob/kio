@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/kioto.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/kioto-v2.css" type="text/css" media="screen"/>
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.04608.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
