@@ -8,6 +8,8 @@
 <head>
     <title>KIOTO, Inc.</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Our hope is to introduce a time-honored beauty to people in the U.S. by faithfully preserving Japanese traditions, the “waza (art)” and “kokoro (soul)” of Kyoto culture. We invite you to enjoy authentic elements of Japan in your daily lives." />
+    <meta name="keywords" content="kimono, robe, Japanese, Japan, Kyoto, paper craft, paper, washi, miniature model, Japanese traditions, art, waza, kokoro" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
@@ -26,6 +28,10 @@
     <script type="text/javascript" src="js/supersized.3.2.5.min.js"></script>
     <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
     <script type="text/javascript" src="js/kioto.js"></script>
+    <script type="text/javascript">
+    <script type="text/javascript">
+    var _gaq=[['_setAccount','UA-27818849-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=true;g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)})(document,'script');
+    </script>
 </head>
 <body>
 <?php
@@ -49,29 +55,27 @@ if (DEBUG === true) {
 	<div id="main-ctlr">
         <h1 id="logo">
             <a href="/">
-                <!-- <img src="img/kioto-logo-03_t.png" width="238" height="240" /> -->
-                <!-- <img src="img/kioto-logo-02-color_t.png" width="250" height="246" /> -->
                 <img src="img/kioto-logo-05-color_t.png" width="228" height="257" />
             </a>
         </h1> 
         <div id="menu">
             <a href="" id="company">
-<div>
+            <div>
             	<span class="menu-title">Company</span>
             	<span class="circle"></span>
-</div>
+            </div>
             </a>
             <a href="" id="products">
-<div>
+            <div>
             	<span class="menu-title">Products</span>
             	<span class="circle"></span>
-</div>
+            </div>
             </a>
             <a href="" id="inquiry">
-<div>
+            <div>
             	<span class="menu-title">Inquiry</span>
             	<span class="circle"></span>
-</div>
+            </div>
             </a>
         </div>
     </div>
