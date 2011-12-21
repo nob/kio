@@ -54,7 +54,9 @@ jQuery(function($){
                                         {image : 'img/slide_c/slide-21.jpg'},
                                         {image : 'img/slide_c/slide-22.jpg'},
                                         {image : 'img/slide_c/slide-23.jpg'},
-                                        {image : 'img/slide_c/slide-24.jpg'}
+                                        {image : 'img/slide_c/slide-24.jpg'},
+                                        {image : 'img/slide_c/slide-25.jpg'},
+                                        {image : 'img/slide_c/slide-26.jpg'}
                                 ]
         
     });
