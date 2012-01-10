@@ -92,7 +92,7 @@ if (DEBUG === true) {
         <div class="content">
             <h2>About US</h2>
             <div id="messages">
-                <p>KIOTO,, Inc. was founded in U.S. to make it easier to purchase Japanese products such as kimonos (Japanese style robes), picture postcards made from washi (Japanese paper) and miniature model building kits. 
+                <p>KIOTO, Inc. was founded in U.S. to make it easier to purchase Japanese products such as kimonos (Japanese style robes), picture postcards made from washi (Japanese paper) and miniature model building kits. 
                 All without the inconvenience of customs paperwork or overseas wire transfers. 
                 We can accommodate orders of all sizes, and since everything is shipped from our U.S. warehouses, delivery times are remarkably short.</p>
 
