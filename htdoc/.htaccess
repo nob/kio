@@ -1,12 +1,6 @@
 Options -Indexes
 DirectoryIndex index.php
 
-#Disallow git related file access
-<Directory .git>
-order allow, deny
-deny from all
-</Directory>
-
 ErrorDocument 404 /404.html 
 ErrorDocument 403 /404.html 
 
@@ -14,6 +8,9 @@ ErrorDocument 403 /404.html
 AddDefaultCharset UTF-8
 
 RewriteEngine on
+
+#Forbid access to git related files.
+RewriteRule ^(.*/)?\.git+ - [F,L]
 
 #Require 'www' subdomain.
 RewriteCond %{HTTP_HOST} ^kiotoinc\.com$ [NC]
