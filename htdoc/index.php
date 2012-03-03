@@ -120,16 +120,16 @@ if (DEBUG === true) {
         <div class="content">
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
-                <li><a href="catalog/kimono_2012_v10.pdf" rel="#pdf-1">Kimono 2012</a></li>
+                <li><a href="catalog/kimono_2012_v20.pdf" rel="#pdf-1">Kimono 2012</a></li>
                 <li>
                     <span>Paper Craft 2012</span>
                     <ul>
-                    <li><a href="catalog/paper_craft_j_scene_v10.pdf" rel="#pdf-2">Japanese Scene series</a></li>
-                    <li><a href="catalog/paper_craft_diorama_v10.pdf" rel="#pdf-3">Diorama series</a></li>
-                    <li><a href="catalog/paper_craft_petit_v10.pdf" rel="#pdf-4">Petit series</a></li>
+                    <li><a href="catalog/paper_craft_j_scene_v20.pdf" rel="#pdf-2">Japanese Scene series</a></li>
+                    <li><a href="catalog/paper_craft_diorama_v20.pdf" rel="#pdf-3">Diorama series</a></li>
+                    <li><a href="catalog/paper_craft_petit_v20.pdf" rel="#pdf-4">Petit series</a></li>
                     </ul>
                 </li>
-                <li><a href="catalog/paper_goods_2012_v10.pdf" rel="#pdf-5">Paper goods 2012</a></li>
+                <li><a href="catalog/paper_goods_2012_v20.pdf" rel="#pdf-5">Paper goods 2012</a></li>
             <ul>
         </div>
     </div>
