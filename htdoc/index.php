@@ -21,7 +21,8 @@
     <script type="text/javascript" src="js/modernizr.custom.04608.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
+    <!--<script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>-->
+    <script type="text/javascript" src="http://jquerytools.flowplayer.netdna-cdn.com/1.2.6/all/jquery.tools.min.js"></script>
     <!--[if lt IE 10]>
     <script type="text/javascript" src="js/jquery.textshadow.js"></script>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
