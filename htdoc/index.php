@@ -129,7 +129,7 @@ if (DEBUG === true) {
                     <li><a href="catalog/paper_craft_petit_v20.pdf" rel="#pdf-4">Petit series</a></li>
                     </ul>
                 </li>
-                <li><a href="catalog/paper_goods_2012_v10.pdf" rel="#pdf-5">Paper goods 2012</a></li>
+                <li><a href="catalog/paper_goods_2012_v20.pdf" rel="#pdf-5">Paper goods 2012</a></li>
             <ul>
         </div>
     </div>
@@ -200,3 +200,4 @@ if (DEBUG === true) {
     </div>
 </body>
 </html>
+
