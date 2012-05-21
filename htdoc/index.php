@@ -138,7 +138,7 @@ if (DEBUG === true) {
                     <!--
                     <li><a href="catalog/paper_craft_petit_v20.pdf" rel="#pdf-4">Petit series</a></li>
                     -->
-                    <li><a href="catalog/paper_craft_petit_v20.pdf" target="_blank">Petit series</a></li>
+                    <li><a href="catalog/paper_craft_petit_v30.pdf" target="_blank">Petit series</a></li>
                     </ul>
                 </li>
                 <!--
