@@ -10,15 +10,15 @@ class Inquiry extends CI_Controller {
         /* ---------------------------------------
          * input data validation here. 
          * --------------------------------------- */
-        $valid = 1;
-        if ( ! $valid) {
+        //$valid = 1;
+        //if ( ! $valid) {
             /* ---------------------------------------
              * redirect to error page.
              * --------------------------------------- */
-            redirect('http://www.kiotoinc.com/form.html?success=1');
-        }
+        //    redirect('http://www.kiotoinc.com/form.html?success=1');
+        //}
 
-
+/*
         $data = array(
                  'inquiry_type' => $this->input->post('inquiry-type'),
                  'r_name' => $this->input->post('r-name'),
@@ -37,6 +37,7 @@ class Inquiry extends CI_Controller {
             $config['max_size'] = '5000';
             $this->load->library('upload', $config); 
         }
+*/
 
         /* ---------------------------------------------
          * insert inquery record to db and get order_id. 
@@ -46,6 +47,8 @@ class Inquiry extends CI_Controller {
         /* ---------------------------------------------
          * send notification email to our team.
          * --------------------------------------------- */
+//echo $this->config->item('notice_from');
+//exit;
         $this->email->from($this->config->item('notice_from'), 
                            $this->config->item('notice_from_name'));
         $this->email->to($this->config->item('notice_to'));
@@ -76,7 +79,7 @@ class Inquiry extends CI_Controller {
         /* ---------------------------------------
          * redirect to thank you page.
          * --------------------------------------- */
-        redirect('http://www.kiotoinc.com/form.html?success=1');
+//        redirect('http://www.kiotoinc.com/form.html?success=1');
 	}
 }
 
