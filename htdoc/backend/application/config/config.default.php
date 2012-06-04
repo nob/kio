@@ -357,5 +357,32 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/*
+|--------------------------------------------------------------------------
+| Ordersheets upload dir path 
+|--------------------------------------------------------------------------
+|
+*/
+$config['ordersheets_dir'] = '/Users/nob/projects/kioto/src/ordersheets/';
+
+/*
+|--------------------------------------------------------------------------
+| inquiry notification email  
+|--------------------------------------------------------------------------
+|
+*/
+$config['notice_from'] = 'google-apps-admin@kiotoinc.com';
+$config['notice_from_name'] = 'kiotoinc.com website';
+$config['notice_to'] = 'noboruthedragon@gmail.com';
+
+/*
+|--------------------------------------------------------------------------
+| customer confirmation email  
+|--------------------------------------------------------------------------
+|
+*/
+$config['confirmation_from'] = 'contact@kiotoinc.com';
+$config['confirmation_from_name'] = 'Kioto, Inc.';
+
 /* End of file config.php */
 /* Location: ./application/config/config.php */
