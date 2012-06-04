@@ -357,14 +357,5 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
-/*
-|--------------------------------------------------------------------------
-| Ordersheets upload dir path 
-|--------------------------------------------------------------------------
-|
-*/
-$config['ordersheets_dir'] = '/home/kiotoinc/ordersheets/';
-
-
 /* End of file config.php */
 /* Location: ./application/config/config.php */

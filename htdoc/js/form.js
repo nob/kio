@@ -23,7 +23,7 @@ jQuery(function($){
         '[required]'    : 'Please fill out this field.'
     });
 
-    //custom validation func for select box (subject)
+    //custom validation func for select box (inquiry-type)
     $.tools.validator.fn("[notfirst]", 'Please select one.', function(input) {
         var index = input.prop('selectedIndex');
         return (index == 0) ? false : true;
@@ -102,7 +102,7 @@ jQuery(function($){
     $('form#inquiry-form button#send').click(function(event){
         $(".waiting").show();               
         vapi.data('validator').reset();
-        init_subject_field();
+        init_inquiry_type_field();
 
         if (!Modernizr.input.placeholder) {
             //remove placeholder text before validation.
@@ -130,15 +130,15 @@ jQuery(function($){
     //[ref article] 
     //http://goo.gl/Nv0Fv
     //http://goo.gl/pjGWJ
-    if ($("select#subject").prop('selectedIndex') == 0) {
-        $("select#subject").css("font-style", "italic");
-        $("select#subject").css("color", "#918f8f");
+    if ($("select#inquiry-type").prop('selectedIndex') == 0) {
+        $("select#inquiry-type").css("font-style", "italic");
+        $("select#inquiry-type").css("color", "#918f8f");
     } else {
-        $("select#subject").css("font-style", "normal");
-        $("select#subject").css("color", "#000000");
+        $("select#inquiry-type").css("font-style", "normal");
+        $("select#inquiry-type").css("color", "#000000");
     }
 
-    init_subject_field();
+    init_inquiry_type_field();
     //HTML 5 placeholder fallback support.
     if (!Modernizr.input.placeholder) {
         $('form#inquiry-form input[placeholder]').each(function(){
@@ -157,13 +157,13 @@ jQuery(function($){
     });
 });
 
-function init_subject_field() {
+function init_inquiry_type_field() {
     init_fields();
-    $("select#subject").change(function(){
+    $("select#inquiry-type").change(function(){
         //reset current error messages for dynamic 3 fields.
         vapi.data('validator').reset($('#ordersheet'));
         vapi.data('validator').reset($('#note'));
-        vapi.data('validator').reset($('#inq-message'));
+        vapi.data('validator').reset($('#message'));
         init_fields(); //reset causes removing all functions binded to the fields...
 
         $('form#inquiry-form .field').each(function(){
@@ -175,11 +175,11 @@ function init_subject_field() {
         var index = $(this).prop('selectedIndex');
 
         if (index == 0) {
-            $("select#subject").css("font-style", "italic");
-            $("select#subject").css("color", "#918f8f");
+            $("select#inquiry-type").css("font-style", "italic");
+            $("select#inquiry-type").css("color", "#918f8f");
         } else {
-            $("select#subject").css("font-style", "normal");
-            $("select#subject").css("color", "#000000");
+            $("select#inquiry-type").css("font-style", "normal");
+            $("select#inquiry-type").css("color", "#000000");
         }
 
         //Rules for hiding/showing fields.
@@ -196,27 +196,27 @@ function init_subject_field() {
             $("li#foli-note").show();
             $("textarea#note").removeAttr('disabled');
 
-            $("li#foli-inq-message").hide();
-            $("textarea#inq-message").attr('disabled', true);
-            $("textarea#inq-message").removeAttr('required');
+            $("li#foli-message").hide();
+            $("textarea#message").attr('disabled', true);
+            $("textarea#message").removeAttr('required');
         } else {
             $("li#foli-note").hide();
             $("textarea#note").attr('disabled', true);
 
-            $("li#foli-inq-message").show();
-            $("textarea#inq-message").removeAttr('disabled');
+            $("li#foli-message").show();
+            $("textarea#message").removeAttr('disabled');
             if (index != 0) {
-                $("textarea#inq-message").attr('required', 'required');
+                $("textarea#message").attr('required', 'required');
             } else { 
-                $("textarea#inq-message").removeAttr('required');
+                $("textarea#message").removeAttr('required');
             }
         }
     });
 }
 function init_fields() {
-    $("select#subject").focus(function(){
-        $("select#subject").css("font-style", "normal");
-        $("select#subject").css("color", "#000000");
+    $("select#inquiry-type").focus(function(){
+        $("select#inquiry-type").css("font-style", "normal");
+        $("select#inquiry-type").css("color", "#000000");
     });
 
     //field focus hilighting

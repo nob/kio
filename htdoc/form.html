@@ -21,28 +21,29 @@
     <script type="text/javascript" src="js/jquery.textshadow.js"></script>
     <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/form-v2.js"></script>
 </head>
 <body>
-<form id="inquiry-form" name="form6" class="wufoo leftLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="http://koholasys.wufoo.com/forms/w7x3z9/#public">
+<!--<form id="inquiry-form" name="form6" class="wufoo leftLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="http://koholasys.wufoo.com/forms/w7x3z9/#public">-->
+<form id="inquiry-form" name="form6" class="wufoo leftLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="http://www.kiotoinc.com/backend/inquiry">
 <ul>
-<li id="foli-subject" class="notranslate       ">
-    <label class="desc" id="title237" for="subject">What is your inquiry about?</label>
+<li id="foli-inquiry-type" class="notranslate       ">
+    <label class="desc" id="title237" for="inquiry-type">What is your inquiry about?</label>
     <div>
-        <select id="subject" notfirst required="required" name="Field237" class="field select large" tabindex="1" >
+        <select id="inquiry-type" notfirst required="required" name="inquiry-type" class="field select large" tabindex="1" >
             <option class="first" value="Please select..." selected="selected">
             Please select...
             </option>
-            <option value="Request for price list" >
+            <option value="1" >
             Request for price list and order sheet
             </option>
-            <option value="Placing order" >
+            <option value="2" >
             Placing order
             </option>
-            <option value="Questions about our products" >
+            <option value="3" >
             Questions about our products
             </option>
-            <option value="Other inquiry" >
+            <option value="4" >
             Other inquiry
             </option>
         </select>
@@ -53,7 +54,7 @@
         Retailer name
     </label>
     <div>
-        <input id="r-name" required="required" name="Field232" type="text" class="field text medium" value="" maxlength="255" tabindex="2"/>
+        <input id="r-name" required="required" name="r-name" type="text" class="field text medium" value="" maxlength="255" tabindex="2"/>
         <img class="help" src="img/help.png" />
         <p class="tooltip instruct" id="instruct232">We accept orders and inquiries from retailers only.<em></em></p>
     </div>
@@ -63,7 +64,7 @@
         Retailer website address
     </label>
     <div>
-        <input id="r-url"  name="Field8" type="url" placeholder="http://www.your-domain.com" class="field text large" value="" maxlength="255" tabindex="3" /> 
+        <input id="r-url"  name="r-url" type="url" placeholder="http://www.your-domain.com" class="field text large" value="" maxlength="255" tabindex="3" /> 
         <p class="instruct" id="instruct8">Optional</p>
     </div>
 </li>
@@ -72,11 +73,11 @@
         Contact person
     </label>
     <div class="column-field">
-        <input id="firstname" required="required" name="Field228" type="text" placeholder="first-name" class="field text fn" value="" maxlength="255" size="8" tabindex="4" />
+        <input id="firstname" required="required" name="firstname" type="text" placeholder="first-name" class="field text fn" value="" maxlength="255" size="8" tabindex="4" />
         <!-- <p class="instruct" id="instruct228">First</p> -->
     </div>
     <div class="column-field">
-        <input id="lastname" required="required" name="Field229" type="text" placeholder="last-name" class="field text ln" value="" maxlength="255" size="14" tabindex="5" />
+        <input id="lastname" required="required" name="lastname" type="text" placeholder="last-name" class="field text ln" value="" maxlength="255" size="14" tabindex="5" />
         <!-- <p class="instruct" id="instruct229">Last</p> -->
     </div>
 </li>
@@ -85,7 +86,7 @@
         Email address
     </label>
     <div>
-        <input id="email" required="required" name="Field1" type="email" placeholder="name@your-domain.com" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="6" /> 
+        <input id="email" required="required" name="email" type="email" placeholder="name@your-domain.com" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="6" /> 
     </div>
 </li>
 <li id="foli-ordersheet" class="notranslate       "  >
@@ -93,7 +94,7 @@
         Order sheet (PDF file)
     </label>
     <div>
-        <input id="ordersheet" name="Field231" type="file" class="field file" size="12" tabindex="7" />
+        <input id="ordersheet" name="ordersheet" type="file" class="field file" size="12" tabindex="7" />
         <img class="help" src="img/help.png" />
         <p class="instruct tooltip" id="instruct231">
             Please request us price list in advance.<br />
@@ -108,7 +109,7 @@
     </label>
     <div>
         <textarea id="note" 
-        name="Field111" 
+        name="note" 
         class="field textarea small" 
         spellcheck="true" 
         rows="1" cols="5" 
@@ -118,13 +119,13 @@
         <p class="instruct" id="instruct111">Optional</p>
     </div>
 </li>
-<li id="foli-inq-message" class="notranslate">
-    <label class="desc" id="title235" for="inq-message">
+<li id="foli-message" class="notranslate">
+    <label class="desc" id="title235" for="message">
         Message
     </label>
     <div>
-        <textarea id="inq-message" 
-        name="Field235" 
+        <textarea id="message" 
+        name="message" 
         class="field textarea medium" 
         spellcheck="true" 
         rows="10" cols="50" 
