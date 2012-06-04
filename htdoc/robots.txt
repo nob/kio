@@ -9,8 +9,5 @@ Disallow: /map.html
 Disallow: /404.html
 Disallow: /PIE.php
 Disallow: /catalog/
-Disallow: /css/
 Disallow: /htdoc.esproj/
-Disallow: /img/
-Disallow: /js/
 

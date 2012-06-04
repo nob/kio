@@ -55,3 +55,8 @@ FileETag None
     BrowserMatch MSIE ie
     Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
 </ifModule>
+
+#disallow js/css/image files to be indexed by search engines.
+<Files ~ "\.(js|css|png|jpe?g|gif)$">
+  Header set X-Robots-Tag "noindex"
+</Files>
