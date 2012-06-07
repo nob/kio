@@ -372,10 +372,9 @@ $config['ordersheets_dir'] = '/home/kiotoinc/ordersheets/';
 |--------------------------------------------------------------------------
 |
 */
-//$config['notice_from'] = 'google-apps-admin@kiotoinc.com';
 $config['notice_from'] = 'no-reply@kiotoinc.com';
 $config['notice_from_name'] = 'kiotoinc.com website';
-$config['notice_to'] = 'contact@kiotoinc.com';
+$config['notice_to'] = 'contact@kiotoinc.com, noboruthedragon@gmail.com';
 $config['notice_subject'] = '[entry#%s] Inquiry from %s %s - www.kiotoinc.com';
 
 /*
