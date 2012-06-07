@@ -1,3 +1,5 @@
 htdoc/config.php
 htdoc/backend/application/config/config.php
 htdoc/github-pull.php
+htdoc/backend/application/logs/
+ordersheets/
