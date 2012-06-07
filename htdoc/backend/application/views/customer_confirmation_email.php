@@ -56,7 +56,7 @@
 <p>--<br>Kioto, Inc.</p>
 </div>
 <div style="font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans-serif; margin-top: 60px">
-<h4>Your inquiry_details</h4>
+<h4>Your inquiry details</h4>
 <table class="readonly" cellspacing="0" cellpadding="0" style="width:100%;border-bottom:1px solid #eee;font-size:12px;line-height:135%;font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans-serif">
     <tr style="background-color:#F5F5F5">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
