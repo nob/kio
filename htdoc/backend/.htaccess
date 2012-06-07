@@ -1,3 +1,6 @@
 RewriteEngine on
 RewriteCond $1 !^(index\.php)
 RewriteRule ^(.*)$ /backend/index.php/$1 [L]
+
+#set PHP timezone to PST/PDT
+SetEnv TZ America/Los_Angeles
