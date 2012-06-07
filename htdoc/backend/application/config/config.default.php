@@ -180,7 +180,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 3; 
 
 /*
 |--------------------------------------------------------------------------
@@ -357,13 +357,14 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+
 /*
 |--------------------------------------------------------------------------
 | Ordersheets upload dir path 
 |--------------------------------------------------------------------------
 |
 */
-$config['ordersheets_dir'] = '/Users/nob/projects/kioto/src/ordersheets/';
+$config['ordersheets_dir'] = '/home/kiotoinc/ordersheets/';
 
 /*
 |--------------------------------------------------------------------------
@@ -371,9 +372,11 @@ $config['ordersheets_dir'] = '/Users/nob/projects/kioto/src/ordersheets/';
 |--------------------------------------------------------------------------
 |
 */
-$config['notice_from'] = 'google-apps-admin@kiotoinc.com';
+//$config['notice_from'] = 'google-apps-admin@kiotoinc.com';
+$config['notice_from'] = 'no-reply@kiotoinc.com';
 $config['notice_from_name'] = 'kiotoinc.com website';
-$config['notice_to'] = 'noboruthedragon@gmail.com';
+$config['notice_to'] = 'contact@kiotoinc.com';
+$config['notice_subject'] = '[entry#%s] Inquiry from %s %s - www.kiotoinc.com';
 
 /*
 |--------------------------------------------------------------------------
@@ -383,6 +386,7 @@ $config['notice_to'] = 'noboruthedragon@gmail.com';
 */
 $config['confirmation_from'] = 'contact@kiotoinc.com';
 $config['confirmation_from_name'] = 'Kioto, Inc.';
+$config['confirmation_subject'] = 'Thank you for your inquiry / order - www.kiotoinc.com';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

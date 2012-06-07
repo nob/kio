@@ -58,7 +58,7 @@
             What is your inquiry about? 
             <span class="req" style="color:red">*</span>        </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
-            <div><?php $inquiry_type;?></div>
+            <div><?php echo $inquiry_type_desc;?></div>
         </td>
     </tr>
     <tr style="background-color:#FFFFFF" >
@@ -66,7 +66,7 @@
             Retailer name 
             <span class="req" style="color:red">*</span>        </th>
         <td id="roField232" style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
-            <div><?php $r_name;?></div>
+            <div><?php echo $retailer_name;?></div>
         </td>
     </tr>
     <tr style="background-color:#F5F5F5">
@@ -74,7 +74,7 @@
             Retailer website address 
                     </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
-        <a href="<?php $r_url;?>" target="_blank" class="url" rel="no-follow"><?php $r_url;?></a>
+        <a href="<?php echo $retailer_url;?>" target="_blank" class="url" rel="no-follow"><?php echo $retailer_url;?></a>
         </td>
     </tr>
     <tr style="background-color:#FFFFFF">
@@ -107,6 +107,20 @@ if ($inquiry_type == '1' || $inquiry_type == '2' ) {
             <div><?php echo $note;?></div>
         </td>
     </tr>
+<?php
+    if ($inquiry_type == '2' ) { 
+?>
+    <tr style="background-color:#F5F5F5">
+        <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
+            Order sheet 
+            <span class="req" style="color:red;">*</span>       </th>
+        <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
+        Please see attached.
+        </td>
+    </tr>
+<?php
+    }
+?>
 <?php
 } else if ($inquiry_type == '3' || $inquiry_type == '4' ) { 
 ?>
