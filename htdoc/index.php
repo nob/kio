@@ -126,7 +126,7 @@ if (DEBUG === true) {
                     <ul>
                     <li><a href="catalog/paper_craft_j_scene_v30.pdf" rel="#pdf-2">Japanese Scene series</a></li>
                     <li><a href="catalog/paper_craft_diorama_v30.pdf" rel="#pdf-3">Diorama series</a></li>
-                    <li><a href="catalog/paper_craft_petit_v30.pdf" rel="#pdf-4">Petit series</a></li>
+                    <li><a href="catalog/paper_craft_petit_v40.pdf" rel="#pdf-4">Petit series</a></li>
                     </ul>
                 </li>
                 <li><a href="catalog/paper_goods_2012_v30.pdf" rel="#pdf-5">Paper goods 2012</a></li>
