@@ -108,8 +108,8 @@ if (DEBUG === true) {
             <div class="info">
                 <h4>Office & Showroom</h4>
                 <p>
-                    851 Burlway Road, Suite 309<br/>
-                    Burlingame, CA 94010
+                    1818 Gilbreth Road, Suite 126<br/>
+                    Burlingame, CA  94010
                     <a href="map.html" id="open-map" class="button" rel="#map">map</a>
                 </p>
             </div>
