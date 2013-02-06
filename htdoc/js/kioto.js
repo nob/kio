@@ -32,9 +32,8 @@ jQuery(function($){
         fit_landscape       :   0,      //Landscape images will not exceed browser width
         slides              :   [           // Slideshow Images
                                         {image : 'img/slide_c/slide-01.jpg'},
-                                        {image : 'img/slide_c/slide-02.jpg'},
-                                        {image : 'img/slide_c/slide-03.jpg'},
                                         {image : 'img/slide_c/slide-04.jpg'},  
+                                        {image : 'img/slide_c/slide-03.jpg'},
                                         {image : 'img/slide_c/slide-05.jpg'},
                                         {image : 'img/slide_c/slide-06.jpg'},
                                         {image : 'img/slide_c/slide-07.jpg'},
