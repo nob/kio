@@ -336,21 +336,26 @@ div#inquiry-pane h3{
 div#products-pane h2{
 	text-shadow: 3px 4px 2px #42275E;
 }
+img#new-ico {
+    position: relative;
+    top: -15px;
+    left: 0px;
+}
 ul#catalogs {
-	margin: 25px 4%;
+	margin: 0px 0px; 
 	min-width: 650px;
-	padding: 0px;
+	padding: 25px 2%;
 }
 ul#catalogs>li {
 	font: normal 29px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
 	list-style-type: none;
 	position: relative;
-	width:30%;
+	width:24%;
 	height: 120px;
 	border: 0px solid #000;
 	display: inline-block;
 	vertical-align: top;
-	padding-right: 3%;
+	padding-right: 0%;
 	/*text-align: center;*/
 	text-decoration: none;
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/kioto-v2.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/kioto-v3.css" type="text/css" media="screen"/>
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.04608.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -29,7 +29,7 @@
     <![endif]-->
     <script type="text/javascript" src="js/supersized.3.2.5.min.js"></script>
     <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
-    <script type="text/javascript" src="js/kioto-v3.js"></script>
+    <script type="text/javascript" src="js/kioto-v4.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-27818849-1']);
@@ -120,17 +120,19 @@ if (DEBUG === true) {
         <div class="content">
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
-                <li><a href="catalog/kimono_2012_v30.pdf" rel="#pdf-1">Kimono 2012</a></li>
+                <li><a href="catalog/kimono_2012_v30.pdf" rel="#pdf-1">Kimono</a></li>
                 <li>
-                    <span>Paper Craft 2012</span>
+                    <span>Paper Craft</span>
                     <ul>
                     <li><a href="catalog/paper_craft_j_scene_v30.pdf" rel="#pdf-2">Japanese Scene series</a></li>
                     <li><a href="catalog/paper_craft_diorama_v30.pdf" rel="#pdf-3">Diorama series</a></li>
                     <li><a href="catalog/paper_craft_petit_v50.pdf" rel="#pdf-4">Petit series</a></li>
                     </ul>
                 </li>
-                <li><a href="catalog/paper_goods_2012_v30.pdf" rel="#pdf-5">Paper goods 2012</a></li>
-            <ul>
+                <li><a href="catalog/paper_goods_2012_v30.pdf" rel="#pdf-5">Paper goods</a></li>
+                <li><a href="catalog/wafu_bags_2013_v10.pdf" rel="#pdf-6">Wafu Bags</a><img src="/img/new.gif" id="new-ico" alt="new!"></li>
+            
+            </ul>
         </div>
     </div>
     <div id="inquiry-pane" class="pane">
@@ -190,6 +192,15 @@ if (DEBUG === true) {
         </div>
     </div>
     <div id="pdf-5" class="overlay pdf-overlay"> 
+        <a class="close"></a>
+        <div class="wrap-overlay">
+            <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
+            <div class="footer">
+                <a href="" target="_blank" class="button download">Download Catalog</a>
+            </div> 
+        </div>
+    </div>
+    <div id="pdf-6" class="overlay pdf-overlay"> 
         <a class="close"></a>
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
