@@ -120,17 +120,17 @@ if (DEBUG === true) {
         <div class="content">
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
-                <li><a href="catalog/kimono_2012_v30.pdf" rel="#pdf-1">Kimono</a></li>
+                <li><a href="catalog/kimono_v40.pdf" rel="#pdf-1">Kimono</a></li>
                 <li>
                     <span>Paper Craft</span>
                     <ul>
-                    <li><a href="catalog/paper_craft_j_scene_v30.pdf" rel="#pdf-2">Japanese Scene series</a></li>
-                    <li><a href="catalog/paper_craft_diorama_v30.pdf" rel="#pdf-3">Diorama series</a></li>
-                    <li><a href="catalog/paper_craft_petit_v50.pdf" rel="#pdf-4">Petit series</a></li>
+                    <li><a href="catalog/paper_craft_j_scene_v40.pdf" rel="#pdf-2">Japanese Scene series</a></li>
+                    <li><a href="catalog/paper_craft_diorama_v40.pdf" rel="#pdf-3">Diorama series</a></li>
+                    <li><a href="catalog/paper_craft_petit_v60.pdf" rel="#pdf-4">Petit series</a></li>
                     </ul>
                 </li>
-                <li><a href="catalog/paper_goods_2012_v30.pdf" rel="#pdf-5">Paper goods</a></li>
-                <li><a href="catalog/wafu_bags_2013_v10.pdf" rel="#pdf-6">Wafu Bags</a><img src="/img/new.gif" id="new-ico" alt="new!"></li>
+                <li><a href="catalog/paper_goods_v40.pdf" rel="#pdf-5">Paper goods</a></li>
+                <li><a href="catalog/wafu_bags_v10.pdf" rel="#pdf-6">Wafu Bags</a><img src="/img/new.gif" id="new-ico" alt="new!"></li>
             
             </ul>
         </div>
