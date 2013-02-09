@@ -29,7 +29,7 @@
     <![endif]-->
     <script type="text/javascript" src="js/supersized.3.2.5.min.js"></script>
     <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
-    <script type="text/javascript" src="js/kioto-v5.js"></script>
+    <script type="text/javascript" src="js/kioto-v6.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-27818849-1']);
@@ -67,19 +67,19 @@ if (DEBUG === true) {
             </a>
         </h1> 
         <div id="menu">
-            <a href="" id="company">
+            <a href="#company" id="company">
             <div>
             	<span class="menu-title">Company</span>
             	<span class="circle"></span>
             </div>
             </a>
-            <a href="" id="products">
+            <a href="#products" id="products">
             <div>
             	<span class="menu-title">Products</span>
             	<span class="circle"></span>
             </div>
             </a>
-            <a href="" id="inquiry">
+            <a href="#inquiry" id="inquiry">
             <div>
             	<span class="menu-title">Inquiry</span>
             	<span class="circle"></span>
@@ -120,6 +120,7 @@ if (DEBUG === true) {
         <div class="content">
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
+                <li><a href="catalog/wafu_bags_v10.pdf" rel="#pdf-6">Wafu Bags</a><img src="/img/new.gif" id="new-ico" alt="new!"></li>
                 <li><a href="catalog/kimono_v40.pdf" rel="#pdf-1">Kimono</a></li>
                 <li>
                     <span>Paper Craft</span>
@@ -130,7 +131,6 @@ if (DEBUG === true) {
                     </ul>
                 </li>
                 <li><a href="catalog/paper_goods_v40.pdf" rel="#pdf-5">Paper goods</a></li>
-                <li><a href="catalog/wafu_bags_v10.pdf" rel="#pdf-6">Wafu Bags</a><img src="/img/new.gif" id="new-ico" alt="new!"></li>
             
             </ul>
         </div>

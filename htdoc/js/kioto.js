@@ -35,6 +35,9 @@ jQuery(function($){
                                         {image : 'img/slide_c/slide-10.jpg'},
                                         {image : 'img/slide_c/slide-13.jpg'},
                                         {image : 'img/slide_c/slide-20.jpg'},  
+                                        {image : 'img/slide_c/slide-27.jpg'},
+                                        {image : 'img/slide_c/slide-28.jpg'},
+                                        {image : 'img/slide_c/slide-29.jpg'},
                                         {image : 'img/slide_c/slide-05.jpg'},
                                         {image : 'img/slide_c/slide-06.jpg'},
                                         {image : 'img/slide_c/slide-08.jpg'},
@@ -46,9 +49,6 @@ jQuery(function($){
                                         {image : 'img/slide_c/slide-22.jpg'},
                                         {image : 'img/slide_c/slide-24.jpg'},
                                         {image : 'img/slide_c/slide-23.jpg'},
-                                        {image : 'img/slide_c/slide-27.jpg'},
-                                        {image : 'img/slide_c/slide-28.jpg'},
-                                        {image : 'img/slide_c/slide-29.jpg'},
                                         {image : 'img/slide_c/slide-17.jpg'},
                                         {image : 'img/slide_c/slide-16.jpg'},
                                         {image : 'img/slide_c/slide-18.jpg'},
@@ -105,7 +105,7 @@ jQuery(function($){
                               window.location.pathname +
                               pdf_path; 
                 var pdf_viewer_url 
-                        = 'http://docs.google.com/viewer?embedded=true&url=';
+                        = 'https://docs.google.com/viewer?embedded=true&url=';
                 //alert(pdf_viewer_url + encodeURIComponent(pdf_url));
                 $('.pdf-frame', wrap).attr(
                         'src', 
