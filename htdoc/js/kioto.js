@@ -49,9 +49,9 @@ jQuery(function($){
                                         {image : 'img/slide_c/slide-22.jpg'},
                                         {image : 'img/slide_c/slide-24.jpg'},
                                         {image : 'img/slide_c/slide-23.jpg'},
-                                        {image : 'img/slide_c/slide-17.jpg'},
-                                        {image : 'img/slide_c/slide-16.jpg'},
-                                        {image : 'img/slide_c/slide-18.jpg'},
+                                        {image : 'img/slide_c/slide-30.jpg'},
+                                        {image : 'img/slide_c/slide-31.jpg'},
+                                        {image : 'img/slide_c/slide-32.jpg'},
                                         {image : 'img/slide_c/slide-25.jpg'},
                                         {image : 'img/slide_c/slide-26.jpg'}
                                 ]
