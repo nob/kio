@@ -16,16 +16,6 @@
     <meta property="og:image" content="http://www.kiotoinc.com/img/kioto-logo-05-color_t.png">
     <meta property="og:title" content="KIOTO, Inc">
     <meta property="og:description" content="KIOTO, Inc. was founded in U.S. to make it easier to purchase Japanese fabric and paper products such as kimonos (Japanese style robes), postcards made from washi (Japanese paper) and paper crafts." />
-    <meta property="og:email" content="contact@kiotoinc.com">
-    <meta property="og:phone_number" content="+1-650-867-7675"/>
-    <meta property="og:fax_number" content="+1-650-373-2093"/>
-    <meta property="og:latitude" content="37.600408"/>
-    <meta property="og:longitude" content="-122.375631"/>
-    <meta property="og:street-address" content="1818 Gilbreth Road, Suite 126"/>
-    <meta property="og:locality" content="Burlingame"/>
-    <meta property="og:region" content="CA"/>
-    <meta property="og:postal-code" content="94010"/>
-    <meta property="og:country-name" content="USA"/>
     <!-- End Open Graph Protocol -->
 
     <title>KIOTO, Inc.</title>
