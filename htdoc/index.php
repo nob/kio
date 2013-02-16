@@ -103,9 +103,6 @@ if (DEBUG === true) {
             </div>
             </a>
         </div>
-        <div class="fb-likebox">
-            We are on <a href="fb-likebox.html" id="open-fb-likebox" class="button" rel="#fb-likebox">facebook</a>
-        </div>
     </div>
     <!-- Sliding Panels -->
     <div id="company-pane" class="pane">
@@ -134,7 +131,7 @@ if (DEBUG === true) {
                 </p>
             </div>
             <div class="fb-likebox">
-                We are on <a href="fb-likebox.html" id="open-fb-likebox" class="button" rel="#fb-likebox">facebook</a>
+                We are on <a href="fb-likebox.html" id="open-fb-likebox" class="button" rel="#fb-likebox">facebook</a>&nbsp;&nbsp;
             </div>
         </div>
     </div>
