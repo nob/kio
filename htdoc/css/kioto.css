@@ -89,6 +89,16 @@ h1#logo img {
 h1#logo img:focus, h1#logo img:active {
     outline: none;
 }
+/* ------------------------------
+ * Facebook Like button 
+ * ------------------------------*/
+div.fb-like {
+    position: relative;
+    top: -15px;
+    left: 100px;
+  	margin: 0 auto;
+	z-index: 1;
+}
 
 /* ------------------------------
  *  Menu
@@ -317,6 +327,7 @@ div#company-pane div.info {
 	vertical-align: top;
 	margin-left: 30px;
 	margin-right: 60px;
+	margin-bottom: 10px;
 }
 .ie6 div#company-pane div.info,
 .ie7 div#company-pane div.info {
@@ -325,6 +336,10 @@ div#company-pane div.info {
 }
 div#company-pane div.info p{
 	margin-left: 8px;
+}
+div#company-pane div.fb-likebox { 
+	margin-left: 230px;
+	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 }
 div#inquiry-pane h2{
 	text-shadow: 3px 3px 1px #545652;
@@ -396,6 +411,33 @@ div.overlay {
 	display: none;
 	z-index: 300;
 }
+div.fb-likebox-overlay {
+	background-color: #ffffff;
+	border: 6px solid #0e0d0d;
+	width: 407px;
+	height:500px;
+	display:none;
+}
+div.fb-likebox-overlay div.wrap-overlay {
+	width: 407px;
+	height: 500px
+}
+/* close button positioned on upper left corner */
+div.fb-likebox-overlay .close {
+	background-image:url(../img/close-s.png);
+	position:absolute;
+	left:-10px;
+	top:-10px;
+	cursor:pointer;
+	height:28px;
+	width:28px;
+}
+div.fb-likebox-overlay iframe {
+	height: 90%;
+	width: 100%;
+	border: 0px solid #333;
+}
+
 div.map-overlay {
 	background-color: #0e0d0d;
 	border: 6px solid #0e0d0d;
@@ -503,6 +545,49 @@ a.download:hover {
 .ie9 a.download:hover {
     -pie-background: linear-gradient(top,#7D49B2, #42275E);
 	behavior: url(PIE.php);
+}
+input#open-fb-likebox,
+a#open-fb-likebox {
+	background: #3B5998;
+	background: #;
+	background: linear-gradient(top,#3B5998, #283C67);
+	border: 1px solid #283C67;
+	border-top: 1px solid #3B5998;
+	width: 140px;
+	height: 26px;
+	display: inline-block;
+	font: bold 22px 'Tahoma', 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	color: #FFFFFF;
+	margin: 5px auto 5px;
+	padding: 3px 2px;
+}
+
+.ie9 input#open-fb-likebox,
+.ie9 a#open-fb-likebox {
+	-pie-background: linear-gradient(top,#3B5998, #283C67);
+	behavior: url(PIE.php);
+}
+.ie6 input#open-fb-likebox,
+.ie7 input#open-fb-likebox,
+.ie6 a#open-fb-likebox, 
+.ie7 a#open-fb-likebox {
+	zoom: 1;
+	display: inline;
+}
+input#open-fb-likebox:hover,
+a#open-fb-likebox:hover {
+	background: #4B72C5;
+	background: linear-gradient(top,#4B72C5, #283C67);
+	border-top: 1px solid #4B72C5;
+}
+.ie9 input#open-fb-likebox:hover,
+.ie9 a#open-fb-likebox:hover {
+	-pie-background: linear-gradient(top,#4B72C5, #283C67);
+	behavior: url(PIE.php);
+}
+.no-js input#open-fb-likebox,
+.no-js a#open-fb-likebox{
+	display: none;
 }
 
 input#open-map,

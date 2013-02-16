@@ -5,12 +5,30 @@
 <!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
 <!--[if gt IE 9]> <html class="no-js ie" lang="en"> <![endif]-->
 <!--[if !IE]><!--> <html class="no-js no-ie" lang="en"> <!--<![endif]-->
-<head>
-    <title>KIOTO, Inc.</title>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="Our hope is to introduce a time-honored beauty to people in the U.S. by faithfully preserving Japanese traditions, the “waza (art)” and “kokoro (soul)” of Kyoto culture. We invite you to enjoy authentic elements of Japan in your daily lives." />
-    <meta name="keywords" content="kimono, robe, Japanese, Japan, Kyoto, paper craft, paper, washi, miniature model, Japanese traditions, art, waza, kokoro" />
+    <meta name="description" content="KIOTO, Inc. was founded in U.S. to make it easier to purchase Japanese fabric and paper products such as kimonos (Japanese style robes), bags, postcards made from washi (Japanese paper) and paper crafts." />
+    <meta name="keywords" content="Japan, Japanese, fabric, cloth, paper, washi, kimono, robe, bag, paper craft, postcards, miniature model, Japanese traditions, art, waza, kokoro" />
     <meta name="google-site-verification" content="q6AIKs0v5j0xUe_MAqC4zN3bil2HhHoP23PAGInrudQ" />
+    <!-- Open Graph Protocol -->
+    <meta property="og:type"content="business"> 
+    <meta property="og:url" content="http://www.kiotoinc.com/"> 
+    <meta property="og:image" content="http://www.kiotoinc.com/img/kioto-logo-05-color_t.png">
+    <meta property="og:title" content="KIOTO, Inc">
+    <meta property="og:description" content="KIOTO, Inc. was founded in U.S. to make it easier to purchase Japanese fabric and paper products such as kimonos (Japanese style robes), postcards made from washi (Japanese paper) and paper crafts." />
+    <meta property="og:email" content="contact@kiotoinc.com">
+    <meta property="og:phone_number" content="+1-650-867-7675"/>
+    <meta property="og:fax_number" content="+1-650-373-2093"/>
+    <meta property="og:latitude" content="37.600408"/>
+    <meta property="og:longitude" content="-122.375631"/>
+    <meta property="og:street-address" content="1818 Gilbreth Road, Suite 126"/>
+    <meta property="og:locality" content="Burlingame"/>
+    <meta property="og:region" content="CA"/>
+    <meta property="og:postal-code" content="94010"/>
+    <meta property="og:country-name" content="USA"/>
+    <!-- End Open Graph Protocol -->
+
+    <title>KIOTO, Inc.</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
@@ -42,6 +60,14 @@
     </script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <?php
 include 'config.php';
 if (DEBUG === true) {
@@ -61,6 +87,7 @@ if (DEBUG === true) {
     <a id="nextslide" class="load-item"></a>
     <!-- Logo & Main menu --> 
 	<div id="main-ctlr">
+        <div class="fb-like" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
         <h1 id="logo">
             <a href="/">
                 <img src="img/kioto-logo-05-color_t.png" width="228" height="257" />
@@ -113,6 +140,9 @@ if (DEBUG === true) {
                     <a href="map.html" id="open-map" class="button" rel="#map">map</a>
                 </p>
             </div>
+            <div class="fb-likebox">
+                We are on <a href="fb-likebox.html" id="open-fb-likebox" class="button" rel="#fb-likebox">facebook</a>&nbsp;&nbsp;
+            </div>
         </div>
     </div>
     <div id="products-pane" class="pane">
@@ -149,6 +179,11 @@ if (DEBUG === true) {
         Thank you for your order / inquiry.<br/>
         We will get back to you soon!
     </div>
+    <!-- div for fb-likebox overlay -->
+    <div id="fb-likebox" class="overlay fb-likebox-overlay">
+        <a class="close"></a>
+        <div class="wrap-overlay"></div>
+    </div> 
     <!-- div for map overlay -->
     <div id="map" class="overlay map-overlay">
         <a class="close"></a>

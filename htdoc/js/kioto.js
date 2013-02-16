@@ -62,8 +62,26 @@ jQuery(function($){
      * Initial page fade In effect.
      *-------------------------------*/
     $('#blind').delay(1000).fadeOut(1200, function () {
-        $("#logo").animate({height: 300}, 500);
+        //Allows direct access to each panel according to hash in URL.
+        switch (location.hash) {
+        case '#company':
+            $('#company').click();
+            break;
+        case '#inquiry':
+            $('#inquiry').click();
+            break;
+        case '#products':
+            $('#products').click();
+            break;
+        default:
+            $('#logo').animate({height: 300}, 500);
+            $('div#menu').show();
+            break;
+        }
+/*
+        $('#logo').animate({height: 300}, 500);
         $('div#menu').show();
+*/
         api.playToggle(); //start slide show.
     });
 
@@ -145,6 +163,30 @@ jQuery(function($){
     });
 
     /*-------------------------------
+     * Facebook overlay.
+     *-------------------------------*/    
+     $('#open-fb-likebox').overlay({
+        close: '.close',
+        left: 180, 
+        top: 35,
+        closeOnClick: true,
+        onBeforeLoad: function() { 
+            var wrap = this.getOverlay().find('.wrap-overlay');
+            if (wrap.is(":empty")) {
+                //load external page only when first time click.
+                wrap.load(this.getTrigger().attr('href'));
+            }
+            $('#logo, .pane-close').click(function(event) {
+                $('#open-fb-likebox').data('overlay').close();
+            });    
+        },
+        onLoad: function() {
+        },
+        onClose: function() { 
+        }
+    });
+
+    /*-------------------------------
      * Sliding panel 
      *-------------------------------*/    
     //Slide In
@@ -185,6 +227,7 @@ jQuery(function($){
                     }, 
                     500);
         $(".menu-title").fadeTo(500, 1.00);
+
     });
 
 
@@ -192,7 +235,6 @@ jQuery(function($){
      * Circle Expansion
      *-------------------------------*/    
     $("#menu>a").hover(circleExpand, circleBack);
-
 });
 
 
@@ -260,6 +302,7 @@ function slide_pane(menu_id, direction) {
             }
             $("#main-ctlr").animate(sliding, 700);        
         }
+        
     });
 }
 circleExpand = function() {
