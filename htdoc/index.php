@@ -50,14 +50,6 @@
     </script>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <?php
 include 'config.php';
 if (DEBUG === true) {
@@ -77,7 +69,6 @@ if (DEBUG === true) {
     <a id="nextslide" class="load-item"></a>
     <!-- Logo & Main menu --> 
 	<div id="main-ctlr">
-        <div class="fb-like" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande"></div>
         <h1 id="logo">
             <a href="/">
                 <img src="img/kioto-logo-05-color_t.png" width="228" height="257" />

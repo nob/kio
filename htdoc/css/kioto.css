@@ -89,16 +89,6 @@ h1#logo img {
 h1#logo img:focus, h1#logo img:active {
     outline: none;
 }
-/* ------------------------------
- * Facebook Like button 
- * ------------------------------*/
-div.fb-like {
-    position: relative;
-    top: -15px;
-    left: 100px;
-  	margin: 0 auto;
-	z-index: 1;
-}
 
 /* ------------------------------
  *  Menu
