@@ -11,7 +11,7 @@
     <meta name="keywords" content="Japan, Japanese, fabric, cloth, paper, washi, kimono, robe, bag, paper craft, postcards, miniature model, Japanese traditions, art, waza, kokoro" />
     <meta name="google-site-verification" content="q6AIKs0v5j0xUe_MAqC4zN3bil2HhHoP23PAGInrudQ" />
     <!-- Open Graph Protocol -->
-    <meta property="og:type"content="business"> 
+    <meta property="og:type"content="website"> 
     <meta property="og:url" content="http://www.kiotoinc.com/"> 
     <meta property="og:image" content="http://www.kiotoinc.com/img/kioto-logo-05-color_t.png">
     <meta property="og:title" content="KIOTO, Inc">
