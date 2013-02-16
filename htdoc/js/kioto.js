@@ -163,8 +163,8 @@ jQuery(function($){
      *-------------------------------*/    
      $('#open-fb-likebox').overlay({
         close: '.close',
-        left: 180, 
-        top: 35,
+        left: 55, 
+        top: 55,
         closeOnClick: true,
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
@@ -172,7 +172,7 @@ jQuery(function($){
                 //load external page only when first time click.
                 wrap.load(this.getTrigger().attr('href'));
             }
-            $('#logo, .pane-close').click(function(event) {
+            $('#logo, #company, #products, #inquiry').click(function(event) {
                 $('#open-fb-likebox').data('overlay').close();
             });    
         },
@@ -203,6 +203,8 @@ jQuery(function($){
 
         //Show background navi.
         $("#nextslide, #prevslide").show();
+        //Show Facebook button.
+        $("#fb").show();
 
         //Slide main-ctlr back to original state. 
         $("#main-ctlr").animate({top: 100, left: 0}, 700);
@@ -258,6 +260,8 @@ function slide_pane(menu_id, direction) {
 
         //Hide background navi.
         $("#nextslide, #prevslide").hide();
+        //Hide Facebook button.
+        $("#fb").hide();
 
         //Slide the pane.
         var sliding;

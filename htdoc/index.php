@@ -130,9 +130,6 @@ if (DEBUG === true) {
                     <a href="map.html" id="open-map" class="button" rel="#map">map</a>
                 </p>
             </div>
-            <div class="fb-likebox">
-                We are on <a href="fb-likebox.html" id="open-fb-likebox" class="button" rel="#fb-likebox">facebook</a>&nbsp;&nbsp;
-            </div>
         </div>
     </div>
     <div id="products-pane" class="pane">
@@ -164,6 +161,10 @@ if (DEBUG === true) {
             <!-- Customized Wufoo form comes here.-->
             <iframe height="470" allowTransparency="true" frameborder="0" scrolling="no" src="form.html"></iframe>
         </div>
+    </div>
+    <!-- div for fb-likebox button -->
+    <div id="fb">
+        We are on <a href="fb-likebox.html" id="open-fb-likebox" class="button" rel="#fb-likebox">facebook</a>&nbsp;&nbsp;
     </div>
     <div id="thx-inquiry-msg">
         Thank you for your order / inquiry.<br/>

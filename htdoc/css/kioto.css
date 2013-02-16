@@ -337,10 +337,6 @@ div#company-pane div.info {
 div#company-pane div.info p{
 	margin-left: 8px;
 }
-div#company-pane div.fb-likebox { 
-	margin-left: 230px;
-	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
-}
 div#inquiry-pane h2{
 	text-shadow: 3px 3px 1px #545652;
 }
@@ -413,8 +409,8 @@ div.overlay {
 }
 div.fb-likebox-overlay {
 	background-color: #ffffff;
-	border: 6px solid #0e0d0d;
-	width: 407px;
+	border: 6px solid #283C67;
+	width: 300px;
 	height:500px;
 	display:none;
 }
@@ -426,7 +422,7 @@ div.fb-likebox-overlay div.wrap-overlay {
 div.fb-likebox-overlay .close {
 	background-image:url(../img/close-s.png);
 	position:absolute;
-	left:-10px;
+	right:-10px;
 	top:-10px;
 	cursor:pointer;
 	height:28px;
@@ -554,9 +550,9 @@ a#open-fb-likebox {
 	border: 1px solid #283C67;
 	border-top: 1px solid #3B5998;
 	width: 140px;
-	height: 26px;
+	height: 24px;
 	display: inline-block;
-	font: bold 22px 'Tahoma', 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	font: bold 20px 'Tahoma', 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #FFFFFF;
 	margin: 5px auto 5px;
 	padding: 3px 2px;
@@ -915,5 +911,22 @@ div#thx-inquiry-msg {
  }
 .no-rgba div#thx-inquiry-msg {	
 	-pie-background: rgba(0, 0, 0, 0.85);
+}
+div#fb { 
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    width: 230px; 
+    height: 50px;
+    padding: 0px 10px; 
+	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+    border-radius: 10px;
+}
+.rgba div#fb{
+  	background: rgba(255, 255, 255, 0.7);
+ }
+.no-rgba div#fb {	
+	-pie-background: rgba(255, 255, 255, 0.7);
+	behavior: url(PIE.php);
 }
 
