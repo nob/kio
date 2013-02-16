@@ -78,10 +78,6 @@ jQuery(function($){
             $('div#menu').show();
             break;
         }
-/*
-        $('#logo').animate({height: 300}, 500);
-        $('div#menu').show();
-*/
         api.playToggle(); //start slide show.
     });
 
