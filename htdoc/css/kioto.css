@@ -398,16 +398,23 @@ div.overlay {
 	z-index: 300;
 }
 div.fb-likebox-overlay {
-	background-color: #ffffff;
-	border: 6px solid #283C67;
+	border: 5px solid #283C67;
 	width: 300px;
-	height:500px;
+	height: 550px;
 	display:none;
     z-index:100;
+    border-radius: 20px;
+	behavior: url(PIE.php);
+}
+.rgba div.fb-likebox-overlay {
+  	background: rgba(255, 255, 255, 0.8);
+}
+.no-rgba div.fb-likebox-overlay {	
+	-pie-background: rgba(255, 255, 255, 0.8);
 }
 div.fb-likebox-overlay div.wrap-overlay {
-	width: 407px;
-	height: 500px
+    overflow: hidden;
+    position: relative;
 }
 /* close button positioned on upper left corner */
 div.fb-likebox-overlay .close {
@@ -418,11 +425,19 @@ div.fb-likebox-overlay .close {
 	cursor:pointer;
 	height:28px;
 	width:28px;
+    z-index:100;
 }
 div.fb-likebox-overlay iframe {
+    position: relative;
+    left : -1px;
+    top: -1px;
+    /*
 	height: 90%;
 	width: 100%;
+    */
 	border: 0px solid #333;
+    border-radius: 20px;
+	behavior: url(PIE.php);
 }
 
 div.map-overlay {
@@ -440,7 +455,7 @@ div.map-overlay div.wrap-overlay {
 div.map-overlay .close {
 	background-image:url(../img/close-s.png);
 	position:absolute;
-	left:-10px;
+	right:-10px;
 	top:-10px;
 	cursor:pointer;
 	height:28px;
@@ -913,12 +928,12 @@ div#fb {
 	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
     border-radius: 10px;
     display: none;
+	behavior: url(PIE.php);
 }
 .rgba div#fb{
   	background: rgba(255, 255, 255, 0.7);
  }
 .no-rgba div#fb {	
 	-pie-background: rgba(255, 255, 255, 0.7);
-	behavior: url(PIE.php);
 }
 

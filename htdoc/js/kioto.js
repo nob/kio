@@ -166,14 +166,11 @@ jQuery(function($){
      $('#open-fb-likebox').overlay({
         close: '.close',
         left: 55, 
-        top: 55,
+        top: 50,
         closeOnClick: true,
         onBeforeLoad: function() { 
             var wrap = this.getOverlay().find('.wrap-overlay');
-            if (wrap.is(":empty")) {
-                //load external page only when first time click.
-                wrap.load(this.getTrigger().attr('href'));
-            }
+            wrap.load(this.getTrigger().attr('href'));
             $('#logo, #company, #products, #inquiry').click(function(event) {
                 $('#open-fb-likebox').data('overlay').close();
             });    
