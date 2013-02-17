@@ -403,6 +403,7 @@ div.fb-likebox-overlay {
 	width: 300px;
 	height:500px;
 	display:none;
+    z-index:100;
 }
 div.fb-likebox-overlay div.wrap-overlay {
 	width: 407px;
