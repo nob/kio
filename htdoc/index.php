@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/kioto-v6.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/kioto-v5.css" type="text/css" media="screen"/>
     <script type="text/javascript" src="js/prefixfree.min.js"></script>
     <script type="text/javascript" src="js/modernizr.custom.04608.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -37,7 +37,7 @@
     <![endif]-->
     <script type="text/javascript" src="js/supersized.3.2.5.min.js"></script>
     <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
-    <script type="text/javascript" src="js/kioto-v10.js"></script>
+    <script type="text/javascript" src="js/kioto-v9.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-27818849-1']);
