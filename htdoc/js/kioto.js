@@ -75,7 +75,9 @@ jQuery(function($){
             break;
         default:
             $('#logo').animate({height: 300}, 500);
-            $('div#menu').show();
+            $('div#menu').slideDown(800, function () {
+                $('div#fb').slideDown(800);
+            });
             break;
         }
         api.playToggle(); //start slide show.

@@ -912,6 +912,7 @@ div#fb {
     padding: 0px 10px; 
 	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
     border-radius: 10px;
+    display: none;
 }
 .rgba div#fb{
   	background: rgba(255, 255, 255, 0.7);
