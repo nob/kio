@@ -45,7 +45,7 @@ RewriteRule ^(.*)$ http://www.kiotoinc.com/$1 [R=301,L]
 </ifModule>
 #Ignore version number suffix(e.g. 'image-v24.jpg') in filename, which force browsers 
 #to forget their cache and to download updated files in server.
-RewriteRule ^(.+)-v([1-9]+)\.(.+)$ /$1.$3 [L]
+RewriteRule ^(.+)-v(\d+)\.(.+)$ /$1.$3 [L]
 #Remove ETag.
 FileETag None
 #---------------------------------------------------------------
