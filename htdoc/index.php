@@ -7,18 +7,18 @@
 <!--[if !IE]><!--> <html class="no-js no-ie" lang="en"> <!--<![endif]-->
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="KIOTO, Inc. was founded in U.S. to make it easier to purchase Japanese fabric and paper products such as kimonos (Japanese style robes), bags, postcards made from washi (Japanese paper) and paper crafts." />
+    <meta name="description" content="KIOTO was founded in U.S. to make it easier to purchase Japanese fabric and paper products such as kimonos (Japanese style robes), bags, postcards made from washi (Japanese paper) and paper crafts." />
     <meta name="keywords" content="Japan, Japanese, fabric, cloth, paper, washi, kimono, robe, bag, paper craft, postcards, miniature model, Japanese traditions, art, waza, kokoro" />
     <meta name="google-site-verification" content="q6AIKs0v5j0xUe_MAqC4zN3bil2HhHoP23PAGInrudQ" />
     <!-- Open Graph Protocol -->
-    <meta property="og:type"content="website"> 
-    <meta property="og:url" content="http://www.kiotoinc.com/"> 
-    <meta property="og:image" content="http://www.kiotoinc.com/img/kioto-logo-05-color_t.png">
-    <meta property="og:title" content="KIOTO, Inc">
-    <meta property="og:description" content="KIOTO, Inc. was founded in U.S. to make it easier to purchase Japanese fabric and paper products such as kimonos (Japanese style robes), postcards made from washi (Japanese paper) and paper crafts." />
+    <meta property="og:type"content="website">
+    <meta property="og:url" content="http://www.kioto.com/">
+    <meta property="og:image" content="http://www.kioto.com/img/kioto-logo-05-color_t.png">
+    <meta property="og:title" content="KIOTO">
+    <meta property="og:description" content="KIOTO was founded in U.S. to make it easier to purchase Japanese fabric and paper products such as kimonos (Japanese style robes), postcards made from washi (Japanese paper) and paper crafts." />
     <!-- End Open Graph Protocol -->
 
-    <title>KIOTO, Inc.</title>
+    <title>KIOTO</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
@@ -67,13 +67,13 @@ if (DEBUG === true) {
     <!-- Arrow background navigation -->
     <a id="prevslide" class="load-item"></a>
     <a id="nextslide" class="load-item"></a>
-    <!-- Logo & Main menu --> 
+    <!-- Logo & Main menu -->
 	<div id="main-ctlr">
         <h1 id="logo">
             <a href="/">
                 <img src="img/kioto-logo-05-color_t.png" width="228" height="257" />
             </a>
-        </h1> 
+        </h1>
         <div id="menu">
             <a href="#company" id="company">
             <div>
@@ -101,22 +101,22 @@ if (DEBUG === true) {
         <div class="content">
             <h2>About US</h2>
             <div id="messages">
-                <p>KIOTO, Inc. was founded in U.S. to make it easier to purchase Japanese products such as kimonos (Japanese style robes), picture postcards made from washi (Japanese paper) and miniature model building kits. 
-                All without the inconvenience of customs paperwork or overseas wire transfers. 
+                <p>KIOTO was founded in U.S. to make it easier to purchase Japanese products such as kimonos (Japanese style robes), picture postcards made from washi (Japanese paper) and miniature model building kits.
+                All without the inconvenience of customs paperwork or overseas wire transfers.
                 We can accommodate orders of all sizes, and since everything is shipped from our U.S. warehouses, delivery times are remarkably short.</p>
 
                 <p>Our hope is to introduce a time-honored beauty to people in the U.S. by faithfully preserving Japanese traditions, the “waza (art)” and “kokoro (soul)” of Kyoto culture. We invite you to enjoy authentic elements of Japan in your daily lives.</p>
 
             </div>
-            <h3>KIOTO, Inc.</h3>
+            <h3>KIOTO</h3>
             <div class="info">
-                <div><h4>Phone</h4><span>(650) 867-7675</span></div>
+                <div><h4>Phone</h4><span>(650) 373-2092</span></div>
                 <div><h4>Fax</h4><span>(650) 373-2093</span></div>
             </div>
             <div class="info">
-                <h4>Office & Showroom</h4>
+                <h4>Office</h4>
                 <p>
-                    1818 Gilbreth Road, Suite 126<br/>
+                    533 Airport Blvd., Suite 400<br/>
                     Burlingame, CA  94010
                     <a href="map.html" id="open-map" class="button" rel="#map">map</a>
                 </p>
@@ -128,35 +128,29 @@ if (DEBUG === true) {
         <div class="content">
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
-                <li><a href="catalog/wafu_bags_v10.pdf" rel="#pdf-6">Wafu Bags</a><img src="/img/new.gif" id="new-ico" alt="new!"></li>
-                <li><a href="catalog/kimono_v40.pdf" rel="#pdf-1">Kimono</a></li>
-                <li>
-                    <span>Paper Craft</span>
-                    <ul>
-                    <li><a href="catalog/paper_craft_j_scene_v40.pdf" rel="#pdf-2">Japanese Scene series</a></li>
-                    <li><a href="catalog/paper_craft_diorama_v40.pdf" rel="#pdf-3">Diorama series</a></li>
-                    <li><a href="catalog/paper_craft_petit_v60.pdf" rel="#pdf-4">Petit series</a></li>
-                    </ul>
-                </li>
-                <li><a href="catalog/paper_goods_v40.pdf" rel="#pdf-5">Paper goods</a></li>
-            
+                <li><a href="catalog/kimono+yukata+happi_v10.pdf" rel="#pdf-1">Kimono, Yukata & Happi</a></li>
+                <li><a href="catalog/kids_yukata+jinbei_v10.pdf" rel="#pdf-2">Kid's Yukata & Jinbei</a></li>
+                <li><a href="catalog/obi+kinran_v10.pdf" rel="#pdf-3">Obi & Kinran</a></li>
+                <li><a href="catalog/wafu_bags_v10.pdf" rel="#pdf-4">Wafu Bags</a></li>
             </ul>
         </div>
     </div>
     <div id="inquiry-pane" class="pane">
         <div class="pane-close"></div>
         <div class="content">
-            <h2>Orders & Inquiries</h2> 
-            <h3>If you have any inquiries relating to your order or any other aspect of our products, please contact us using this form below (or call <b>650-867-7675</b>). <br/>We will get back to you soon.</h3>
+            <h2>Orders & Inquiries</h2>
+            <h3>If you have any inquiries relating to your order or any other aspect of our products, please contact us using this form below (or call <b>(650) 373-2092</b>). <br/>We will get back to you soon.</h3>
             <hr/>
             <!-- Customized Wufoo form comes here.-->
             <iframe height="470" allowTransparency="true" frameborder="0" scrolling="no" src="form.html"></iframe>
         </div>
     </div>
     <!-- div for fb-likebox button -->
+    <!--
     <div id="fb">
         We are on <a href="fb-likebox.html" id="open-fb-likebox" class="button" rel="#fb-likebox">facebook</a>&nbsp;&nbsp;
     </div>
+    -->
     <div id="thx-inquiry-msg">
         Thank you for your order / inquiry.<br/>
         We will get back to you soon!
@@ -165,65 +159,65 @@ if (DEBUG === true) {
     <div id="fb-likebox" class="overlay fb-likebox-overlay">
         <a class="close"></a>
         <div class="wrap-overlay"></div>
-    </div> 
+    </div>
     <!-- div for map overlay -->
     <div id="map" class="overlay map-overlay">
         <a class="close"></a>
         <div class="wrap-overlay"></div>
-    </div> 
+    </div>
     <!-- divs for pdf overlay -->
-    <div id="pdf-1" class="overlay pdf-overlay"> 
+    <div id="pdf-1" class="overlay pdf-overlay">
         <a class="close"></a>
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
-            </div> 
+            </div>
         </div>
     </div>
-    <div id="pdf-2" class="overlay pdf-overlay"> 
+    <div id="pdf-2" class="overlay pdf-overlay">
         <a class="close"></a>
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
-            </div> 
+            </div>
         </div>
     </div>
-    <div id="pdf-3" class="overlay pdf-overlay"> 
+    <div id="pdf-3" class="overlay pdf-overlay">
         <a class="close"></a>
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
-            </div> 
+            </div>
         </div>
     </div>
-    <div id="pdf-4" class="overlay pdf-overlay"> 
+    <div id="pdf-4" class="overlay pdf-overlay">
         <a class="close"></a>
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
-            </div> 
+            </div>
         </div>
     </div>
-    <div id="pdf-5" class="overlay pdf-overlay"> 
+    <div id="pdf-5" class="overlay pdf-overlay">
         <a class="close"></a>
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
-            </div> 
+            </div>
         </div>
     </div>
-    <div id="pdf-6" class="overlay pdf-overlay"> 
+    <div id="pdf-6" class="overlay pdf-overlay">
         <a class="close"></a>
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
                 <a href="" target="_blank" class="button download">Download Catalog</a>
-            </div> 
+            </div>
         </div>
     </div>
 </body>
