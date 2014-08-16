@@ -171,7 +171,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Catalog</a>
+                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
             </div>
         </div>
     </div>
@@ -180,7 +180,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Catalog</a>
+                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
             </div>
         </div>
     </div>
@@ -189,7 +189,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Catalog</a>
+                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
             </div>
         </div>
     </div>
@@ -198,7 +198,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Catalog</a>
+                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
             </div>
         </div>
     </div>
@@ -207,7 +207,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Catalog</a>
+                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
             </div>
         </div>
     </div>
@@ -216,10 +216,9 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Catalog</a>
+                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
             </div>
         </div>
     </div>
 </body>
 </html>
-

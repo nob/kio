@@ -37,7 +37,7 @@ div#blind {
 	top:0;
 	right:0;
 	bottom:0;
-	left:0;	
+	left:0;
 }
 
 
@@ -68,7 +68,7 @@ h1#logo a, h1#logo img{
 .rgba h1#logo{
   	background: rgba(255, 255, 255, 0.7);
  }
-.no-rgba h1#logo {	
+.no-rgba h1#logo {
 	-pie-background: rgba(255, 255, 255, 0.7);
 	behavior: url(PIE.php);
 }
@@ -112,7 +112,7 @@ div#menu>a{
 	text-align: center;
 	text-decoration: none;
 }
-.ie6 div#manu>a, 
+.ie6 div#manu>a,
 .ie7 div#menu>a {
 	zoom: 1;
 	display: inline;
@@ -138,7 +138,7 @@ div#menu>a span.circle {
 .ie8 div#menu>a span.circle {
 	behavior: url(PIE.php);
 }
-.ie6 div#menu>a span.circle, 
+.ie6 div#menu>a span.circle,
 .ie7 div#menu>a span.circle {
 	margin-top: -55px;
 	margin-left: 0px;
@@ -152,7 +152,7 @@ div#menu>a span.menu-title{
 	height: 18px;
 	text-shadow: 1px 2px 0px #000;
 }
-.ie6 div#menu>a span.menu-title, 
+.ie6 div#menu>a span.menu-title,
 .ie7 div#menu>a span.menu-title {
 	font: normal 22px/26px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	zoom: 1;
@@ -203,7 +203,7 @@ div#company-pane>div.pane-close {
   	width: 50px;
 	height: 46px;
 	background: url(../img/pane-close.png) no-repeat;
-	background-position: 0 0; 
+	background-position: 0 0;
 }
 .no-js div#company-pane>div.pane-close {
 	display: none;
@@ -233,7 +233,7 @@ div#inquiry-pane>div.pane-close {
 	background-position: 0 -192px;
 }
 div#inquiry-pane>div.pane-close:hover {
-	background-position: 0 -288px; 
+	background-position: 0 -288px;
 	cursor: pointer;
 }
 div#products-pane {
@@ -263,13 +263,13 @@ div#products-pane>div.pane-close {
   	width: 50px;
 	height: 46px;
 	background: url(../img/pane-close.png) no-repeat;
-	background-position: 0 -384px; 
+	background-position: 0 -384px;
 }
 .no-js div#products-pane>div.pane-close {
 	display: none;
 }
 div#products-pane>div.pane-close:hover {
-	background-position: 0 -480px; 
+	background-position: 0 -480px;
 	cursor: pointer;
 }
 
@@ -279,7 +279,7 @@ div#products-pane>div.pane-close:hover {
 div.pane>.content{
 	margin: 20px 30px 10px;
 	color: #f7e8c5;
-	font: normal 19px/26px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;	
+	font: normal 19px/26px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 }
 div#company-pane>div.content {
 	width: 590px;
@@ -343,7 +343,7 @@ img#new-ico {
     left: 0px;
 }
 ul#catalogs {
-	margin: 0px 0px; 
+	margin: 0px 0px;
 	min-width: 650px;
 	padding: 25px 2%;
 }
@@ -409,7 +409,7 @@ div.fb-likebox-overlay {
 .rgba div.fb-likebox-overlay {
   	background: rgba(255, 255, 255, 0.8);
 }
-.no-rgba div.fb-likebox-overlay {	
+.no-rgba div.fb-likebox-overlay {
 	-pie-background: rgba(255, 255, 255, 0.8);
 }
 div.fb-likebox-overlay div.wrap-overlay {
@@ -496,7 +496,7 @@ div.pdf-overlay div.footer {
  *  Buttons
  * ---------------------------*/
 button,
-input.button, 
+input.button,
 a.button {
 	display: block;
 	border-radius: 10px;
@@ -530,7 +530,7 @@ a.download {
 	border-top: 1px solid #643B8F;
 	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	padding: 4px 6px;
-	width: 180px;
+	width: 250px;
 }
 .ie9 input.download,
 .ie9 a.download {
@@ -571,7 +571,7 @@ a#open-fb-likebox {
 }
 .ie6 input#open-fb-likebox,
 .ie7 input#open-fb-likebox,
-.ie6 a#open-fb-likebox, 
+.ie6 a#open-fb-likebox,
 .ie7 a#open-fb-likebox {
 	zoom: 1;
 	display: inline;
@@ -614,7 +614,7 @@ a#open-map {
 }
 .ie6 input#open-map,
 .ie7 input#open-map,
-.ie6 a#open-map, 
+.ie6 a#open-map,
 .ie7 a#open-map {
 	zoom: 1;
 	display: inline;
@@ -652,7 +652,7 @@ button#send {
 	-pie-background: linear-gradient(top,#363831, #181916);
 	behavior: url(PIE.php);
 }
-.ie6 button#send, 
+.ie6 button#send,
 .ie7 button#send {
 	zoom: 1;
 	display: inline;
@@ -675,7 +675,7 @@ div#inquiry-pane hr{
 }
 div#inquiry-pane iframe {
 	width: 100%;
-	border: none;	
+	border: none;
 }
 form#inquiry-form {
 	margin-top: 20px;
@@ -696,7 +696,7 @@ form#inquiry-form li.buttons{
 	position: relative;
 }
 form#inquiry-form li:after{
-    content: ""; 
+    content: "";
     display: block;
     clear: both;
 }
@@ -714,7 +714,7 @@ form#inquiry-form div.column-field {
 	margin-right: 6px;
 }
 form#inquiry-form div {
-	float: left;	
+	float: left;
 	padding: 0px 0px;
 	margin: 0px 0px;
 	border-width: 0px;
@@ -767,7 +767,7 @@ form#inquiry-form .field {
 form#inquiry-form .field:focus {
 	background-color: #ffffff;
 }
-form#inquiry-form .text, 
+form#inquiry-form .text,
 form#inquiry-form .textarea {
 	width: 360px;
 	padding: 3px;
@@ -829,7 +829,7 @@ form#inquiry-form img.help:hover {
 	width:205px;
 	padding: 5px 3px;
 	margin: 0 0 !important;
-	font: normal 17px/17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif !important; 
+	font: normal 17px/17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif !important;
 	color:#000 !important;
 	box-shadow:0px 0px 5px #F7E8C5;
 	border-radius:4px;
@@ -915,16 +915,16 @@ div#thx-inquiry-msg {
 .rgba div#thx-inquiry-msg{
   	background: rgba(0, 0, 0, 0.85);
  }
-.no-rgba div#thx-inquiry-msg {	
+.no-rgba div#thx-inquiry-msg {
 	-pie-background: rgba(0, 0, 0, 0.85);
 }
-div#fb { 
+div#fb {
     position: fixed;
     bottom: 20px;
     left: 55px;
-    width: 230px; 
+    width: 230px;
     height: 50px;
-    padding: 0px 10px; 
+    padding: 0px 10px;
 	font: normal 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
     border-radius: 10px;
     display: none;
@@ -933,7 +933,7 @@ div#fb {
 .rgba div#fb{
   	background: rgba(255, 255, 255, 0.7);
  }
-.no-rgba div#fb {	
+.no-rgba div#fb {
 	-pie-background: rgba(255, 255, 255, 0.7);
 }
 
