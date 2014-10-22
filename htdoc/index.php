@@ -48,7 +48,6 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
-    <script src="//j.wovn.io/0" data-wovnio="key=pDle8"></script>
 </head>
 <body>
 <?php
