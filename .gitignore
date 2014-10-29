@@ -3,3 +3,7 @@ htdoc/backend/application/config/config.php
 htdoc/github-pull.php
 htdoc/backend/application/logs/
 ordersheets/
+vagrant/.vagrant/
+
+.DS_Store
+Thumbs.db
