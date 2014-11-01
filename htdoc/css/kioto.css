@@ -167,6 +167,7 @@ div.pane {
 	color:#fff;
 	padding: 0px 0px;
 	z-index: 250;
+	overflow: scroll;
 }
 .rgba div.pane {
 	background:rgba(0,0,0,0.7);
@@ -198,7 +199,7 @@ div#company-pane {
 }
 div#company-pane>div.pane-close {
 	position: absolute;
-	top: 350px;
+	top: 390px;
 	left: 600px;
   	width: 50px;
 	height: 46px;
@@ -225,7 +226,7 @@ div#inquiry-pane {
 }
 div#inquiry-pane>div.pane-close {
 	position: absolute;
-	top: 350px;
+	top: 390px;
 	left: 0px;
   	width: 50px;
 	height: 46px;
@@ -277,20 +278,27 @@ div#products-pane>div.pane-close:hover {
  *  Panel contents
  * --------------------------*/
 div.pane>.content{
-	margin: 20px 30px 10px;
+	margin: 20px 30px 50px;
 	color: #f7e8c5;
-	font: normal 19px/26px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	font: normal 21px/26px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+}
+div.pane>.ja{
+    font: bold 16px/25px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 div#company-pane>div.content {
 	width: 590px;
 }
+
 div#inquiry-pane>div.content {
 	width: 590px;
 }
 div.pane h2 {
-	font: bold 38px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+	font: bold 32px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
 	margin: 15px 0px 10px 0px;
+}
+div.pane .ja h2 {
+    font: bold 30px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 div#company-pane h2 {
 	text-shadow: 3px 2px 0px #415e27;
@@ -305,12 +313,17 @@ div#company-pane h4 {
 	font: bold 22px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	text-shadow: 2px 1px 0px #415e27;
 }
-div#company-pane div#messages {
-	margin-bottom: 50px;
+div#company-pane div.messages {
+	margin-bottom: 30px;
 }
-div#messages p {
-	font-size: 22px;
-	line-height: 28px;
+div#company-pane div.messages p{
+	margin-bottom: 13px;
+}
+div#company-pane .ja h3 {
+    font: bold 24px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+div#company-pane .ja h4 {
+    font: bold 19px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 div#company-pane div.info {
 	display: inline-block;
@@ -332,7 +345,15 @@ div#inquiry-pane h2{
 }
 div#inquiry-pane h3{
 	font: normal 24px/28px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
+}
+div#inquiry-pane .ja h3 {
+    font: bold 18px/22px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+div#inquiry-pane .mailto {
+	display: block;
+	margin-left: 25px;
+	color: red;
 }
 div#products-pane h2{
 	text-shadow: 3px 4px 2px #42275E;
@@ -351,13 +372,13 @@ ul#catalogs>li {
 	font: normal 29px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
 	list-style-type: none;
 	position: relative;
-	width:24%;
+	width:33%;
 	height: 120px;
 	border: 0px solid #000;
 	display: inline-block;
 	vertical-align: top;
 	padding-right: 0%;
-	/*text-align: center;*/
+	text-align: center;
 	text-decoration: none;
 }
 .no-js ul#catalogs>li {
@@ -379,10 +400,14 @@ ul#catalogs>li>ul>li {
 	text-align: left;
 }
 ul#catalogs li>a {
-/*	font: normal 29px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;*/
+	font: normal 29px "Yanone Kaffeesatz", "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
 	text-decoration: none;
 	cursor: pointer;
+	display: block;
+}
+ul#catalogs li>a.ja {
+    font: bold 21px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 ul#catalogs li>a:hover {
 	color: #9062be;
@@ -443,13 +468,13 @@ div.fb-likebox-overlay iframe {
 div.map-overlay {
 	background-color: #0e0d0d;
 	border: 6px solid #0e0d0d;
-	width: 300px;
-	height:330px;
+	width: 400px;
+	height:300px;
 	display:none;
 }
 div.map-overlay div.wrap-overlay {
-	width: 300px;
-	height: 330px
+	width: 400px;
+	height: 300px
 }
 /* close button positioned on upper left corner */
 div.map-overlay .close {
@@ -462,7 +487,7 @@ div.map-overlay .close {
 	width:28px;
 }
 div.map-overlay iframe {
-	height: 90%;
+	height: 100%;
 	width: 100%;
 	border: 0px solid #333;
 }
@@ -532,6 +557,10 @@ a.download {
 	padding: 4px 6px;
 	width: 250px;
 }
+.ja input.download,
+.ja a.download {
+    font: bold 15px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
 .ie9 input.download,
 .ie9 a.download {
 	-pie-background: linear-gradient(top, #643B8F, #42275E);
@@ -593,7 +622,9 @@ a#open-fb-likebox:hover {
 }
 
 input#open-map,
-a#open-map {
+a#open-map,
+input#open-map-ja,
+a#open-map-ja {
 	background: #608B3A;
 	background: linear-gradient(top,#608B3A, #415E27);
 	border: 1px solid #415E27;
@@ -601,37 +632,57 @@ a#open-map {
 	width: 50px;
 	height: 22px;
 	display: inline-block;
-	font: normal 17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
 	color: #f7e8c5;
 	margin: 5px auto 5px;
 	padding: 3px 2px;
 }
 
+input#open-map,
+a#open-map {
+	font: normal 17px 'Yanone Kaffeesatz', "Helvetica Neue", sans-serif;
+}
+input#open-map-ja,
+a#open-map-ja {
+    font: bold 15px "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
 .ie9 input#open-map,
-.ie9 a#open-map {
+.ie9 a#open-map,
+.ie9 input#open-map-ja,
+.ie9 a#open-map-ja {
 	-pie-background: linear-gradient(top,#608B3A, #415E27);
 	behavior: url(PIE.php);
 }
 .ie6 input#open-map,
 .ie7 input#open-map,
 .ie6 a#open-map,
-.ie7 a#open-map {
+.ie7 a#open-map,
+.ie6 input#open-map-ja,
+.ie7 input#open-map-ja,
+.ie6 a#open-map-ja,
+.ie7 a#open-map-ja {
 	zoom: 1;
 	display: inline;
 }
 input#open-map:hover,
-a#open-map:hover {
+a#open-map:hover,
+input#open-map-ja:hover,
+a#open-map-ja:hover {
 	background: #79AE48;
 	background: linear-gradient(top,#79AE48, #415E27);
 	border-top: 1px solid #79AE48;
 }
 .ie9 input#open-map:hover,
-.ie9 a#open-map:hover {
+.ie9 a#open-map:hover,
+.ie9 input#open-map-ja:hover,
+.ie9 a#open-map-ja:hover {
 	-pie-background: linear-gradient(top,#79AE48, #415E27);
 	behavior: url(PIE.php);
 }
 .no-js input#open-map,
-.no-js a#open-map{
+.no-js a#open-map
+.no-js input#open-map-ja,
+.no-js a#open-map-ja{
 	display: none;
 }
 
@@ -936,4 +987,3 @@ div#fb {
 .no-rgba div#fb {
 	-pie-background: rgba(255, 255, 255, 0.7);
 }
-

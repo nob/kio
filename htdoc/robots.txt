@@ -1,5 +1,5 @@
 User-agent: *
-Sitemap: http://www.kiotoinc.com/sitemap.xml
+Sitemap: http://www.kyosen-gift.co.jp/sitemap.xml
 Allow: /
 Disallow: /index.php
 Disallow: /config.default.php
@@ -10,4 +10,3 @@ Disallow: /404.html
 Disallow: /PIE.php
 Disallow: /catalog/
 Disallow: /htdoc.esproj/
-
