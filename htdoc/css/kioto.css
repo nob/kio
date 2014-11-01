@@ -353,7 +353,7 @@ div#inquiry-pane .ja h3 {
 div#inquiry-pane .mailto {
 	display: block;
 	margin-left: 25px;
-	color: red;
+	color: #FC6469;
 }
 div#products-pane h2{
 	text-shadow: 3px 4px 2px #42275E;
