@@ -102,7 +102,7 @@ if (DEBUG === true) {
               <dt>Address</dt><dd>42 Haranishi-cho Goryo Yamashina-ku, Kyoto 607-8424, Japan&nbsp;&nbsp;<a href="map.html" id="open-map" class="button" rel="#map">map</a></dd>
               <dt>Phone</dt><dd>+81-75-591-3354</dd>
               <dt>Fax</dt><dd>+81-75-581-8544</dd>
-              <dt>President</dt><dd>ki Kitamura</dd>
+              <dt>President</dt><dd>Shigeaki Kitamura</dd>
               <dt>Establishment</dt><dd>1964</dd>
               <dt>Founded</dt><dd>1970</dd>
               <dt>Capital</dt><dd>25,000,000 yen</dd>
