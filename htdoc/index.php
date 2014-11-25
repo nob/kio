@@ -144,7 +144,7 @@ if (DEBUG === true) {
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
                 <li>
-                    <a href="catalog/wafu_bags_v10.pdf" rel="#pdf-1">Kimono, Yukata & Happi<br><span class="ja">着物、浴衣、半被</span></a>
+                    <a href="catalog/kimono+yukata+happi_v10.pdf" rel="#pdf-1">Kimono, Yukata & Happi<br><span class="ja">着物、浴衣、半被</span></a>
                 </li>
                 <li>
                     <a href="catalog/kids-yukata+jinbei_v10.pdf" rel="#pdf-2">Kid's Yukata & Jinbei<br><span class="ja">子供用 浴衣、甚平</span></a>
