@@ -19,7 +19,7 @@
     <!-- End Open Graph Protocol -->
 
     <title>KYOTO SEN'I</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon-kyosen.ico">
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
@@ -144,7 +144,7 @@ if (DEBUG === true) {
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
                 <li>
-                    <a href="catalog/kimono+yukata+happi_v10.pdf" rel="#pdf-1">Kimono, Yukata & Happi<br><span class="ja">着物、浴衣、半被</span></a>
+                    <a href="catalog/kimono+yukata+happi_v10.pdf" rel="#pdf-1">Kimono, Yukata & Happi<br><span class="ja">着物、浴衣、伴天</span></a>
                 </li>
                 <li>
                     <a href="catalog/kids-yukata+jinbei_v10.pdf" rel="#pdf-2">Kid's Yukata & Jinbei<br><span class="ja">子供用 浴衣、甚平</span></a>
@@ -196,7 +196,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
+                <a href="" target="_blank" class="button download">Download Catalog</a>
             </div>
         </div>
     </div>
@@ -205,7 +205,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
+                <a href="" target="_blank" class="button download">Download Catalog</a>
             </div>
         </div>
     </div>
@@ -214,7 +214,7 @@ if (DEBUG === true) {
         <div class="wrap-overlay">
             <iframe class="pdf-frame" src="" frameborder="0" scrolling="no"></iframe>
             <div class="footer">
-                <a href="" target="_blank" class="button download">Download Hi-Quality Catalog</a>
+                <a href="" target="_blank" class="button download">Download Catalog</a>
             </div>
         </div>
     </div>
