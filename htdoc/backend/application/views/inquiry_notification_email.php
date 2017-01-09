@@ -47,7 +47,7 @@
     padding:2px 25px 2px 0 !important;
 }
 
-</style> 
+</style>
 </head>
 
 <body title="339666">
@@ -55,7 +55,7 @@
 <table class="readonly" cellspacing="0" cellpadding="0" style="width:100%;border-bottom:1px solid #eee;font-size:12px;line-height:135%;font-family:'Lucida Grande','Lucida Sans Unicode', Tahoma, sans-serif">
     <tr style="background-color:#F5F5F5">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            What is your inquiry about? 
+            What is your inquiry about?
             <span class="req" style="color:red">*</span>        </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
             <div><?php echo $inquiry_type_desc;?></div>
@@ -63,7 +63,7 @@
     </tr>
     <tr style="background-color:#FFFFFF" >
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Retailer name 
+            Retailer name
             <span class="req" style="color:red">*</span>        </th>
         <td id="roField232" style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
             <div><?php echo $retailer_name;?></div>
@@ -71,7 +71,7 @@
     </tr>
     <tr style="background-color:#F5F5F5">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Retailer website address 
+            Retailer website address
                     </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
         <a href="<?php echo $retailer_url;?>" target="_blank" class="url" rel="no-follow"><?php echo $retailer_url;?></a>
@@ -79,7 +79,7 @@
     </tr>
     <tr style="background-color:#FFFFFF">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Contact person 
+            Contact person
             <span class="req" style="color:red">*</span>        </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
         <span class="fn n">
@@ -90,29 +90,29 @@
     </tr>
     <tr style="background-color:#F5F5F5">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Email address 
+            Email address
             <span class="req" style="color:red;">*</span>       </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
-        <a class="email" href="mailto:noboruthedragon@gmail.com"><?php echo $email;?></a>
+        <a class="email" href="mailto:<?php echo $email;?>" style="cursor: pointer;"><?php echo $email;?></a>
         </td>
     </tr>
-<?php 
-if ($inquiry_type == '1' || $inquiry_type == '2' ) { 
+<?php
+if ($inquiry_type == '1' || $inquiry_type == '2' ) {
 ?>
     <tr style="background-color:#FFFFFF">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Note 
+            Note
                         </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
             <div><?php echo $note;?></div>
         </td>
     </tr>
 <?php
-    if ($inquiry_type == '2' ) { 
+    if ($inquiry_type == '2' ) {
 ?>
     <tr style="background-color:#F5F5F5">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Order sheet 
+            Order sheet
             <span class="req" style="color:red;">*</span>       </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
         Please see attached.
@@ -122,11 +122,11 @@ if ($inquiry_type == '1' || $inquiry_type == '2' ) {
     }
 ?>
 <?php
-} else if ($inquiry_type == '3' || $inquiry_type == '4' ) { 
+} else if ($inquiry_type == '3' || $inquiry_type == '4' ) {
 ?>
     <tr style="background-color:#FFFFFF">
         <th style="vertical-align:top;color:#222;text-align:left;padding:7px 9px 7px 9px;border-top:1px solid #eee;">
-            Message 
+            Message
             <span class="req" style="color:red">*</span>        </th>
                         </th>
         <td style="vertical-align:top;color:#333;width:60%;padding:7px 9px 7px 0;border-top:1px solid #eee;">
@@ -136,7 +136,7 @@ if ($inquiry_type == '1' || $inquiry_type == '2' ) {
 <?php
 }
 ?>
-    
+
 </table>
 
 </div>
