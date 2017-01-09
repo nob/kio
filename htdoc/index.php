@@ -128,9 +128,9 @@ if (DEBUG === true) {
         <div class="content">
             <h2>Product Catalogs</h2>
             <ul id="catalogs">
-                <li><a href="catalog/kimono+yukata+happi_v11.pdf" rel="#pdf-1">Kimono, Yukata & Happi</a></li>
-                <li><a href="catalog/kids-yukata+jinbei_v10.pdf" rel="#pdf-2">Kid's Yukata & Jinbei</a></li>
-                <li><a href="catalog/obi+kinran_v10.pdf" rel="#pdf-3">Obi & Kinran</a></li>
+                <li><a href="catalog/kimono+yukata+happi_v12.pdf" rel="#pdf-1">Kimono, Yukata & Happi</a></li>
+                <li><a href="catalog/kids-yukata+jinbei_v11.pdf" rel="#pdf-2">Kid's Yukata & Jinbei</a></li>
+                <li><a href="catalog/obi+kinran_v11.pdf" rel="#pdf-3">Obi & Kinran</a></li>
                 <li><a href="catalog/wafu_bags_v10.pdf" rel="#pdf-4">Wafu Bags</a></li>
             </ul>
         </div>
