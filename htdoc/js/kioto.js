@@ -35,20 +35,20 @@ jQuery(function($){
                                         {image : 'img/slide_c/slide-10.jpg'}, //K
                                         {image : 'img/slide_c/slide-33.jpg'}, //Kin
                                         {image : 'img/slide_c/slide-34.jpg'}, //Kin
-                                        {image : 'img/slide_c/slide-27.jpg'}, //W
-                                        {image : 'img/slide_c/slide-28.jpg'}, //W
-                                        {image : 'img/slide_c/slide-29.jpg'}, //W
+                                        // {image : 'img/slide_c/slide-27.jpg'}, //W
+                                        // {image : 'img/slide_c/slide-28.jpg'}, //W
+                                        // {image : 'img/slide_c/slide-29.jpg'}, //W
                                         {image : 'img/slide_c/slide-35.jpg'}, //Kin
                                         {image : 'img/slide_c/slide-36.jpg'}, //Kin
                                         {image : 'img/slide_c/slide-11.jpg'}, //K
                                         {image : 'img/slide_c/slide-19.jpg'}, //K
                                         {image : 'img/slide_c/slide-13.jpg'}, //K
-                                        {image : 'img/slide_c/slide-30.jpg'}, //W
-                                        {image : 'img/slide_c/slide-31.jpg'}, //W
+                                        // {image : 'img/slide_c/slide-30.jpg'}, //W
+                                        // {image : 'img/slide_c/slide-31.jpg'}, //W
                                         {image : 'img/slide_c/slide-20.jpg'}, //K
                                         {image : 'img/slide_c/slide-15.jpg'}, //K
-                                        {image : 'img/slide_c/slide-14.jpg'}, //K
-                                        {image : 'img/slide_c/slide-32.jpg'} //W
+                                        {image : 'img/slide_c/slide-14.jpg'} //K
+                                        // {image : 'img/slide_c/slide-32.jpg'} //W
                                 ]
 
     });

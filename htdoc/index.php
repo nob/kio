@@ -36,7 +36,7 @@
     <![endif]-->
     <script type="text/javascript" src="js/supersized.3.2.5.min.js"></script>
     <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
-    <script type="text/javascript" src="js/kioto-v10.js"></script>
+    <script type="text/javascript" src="js/kioto-v11.js"></script>
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-27818849-1']);
