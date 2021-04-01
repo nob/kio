@@ -103,7 +103,7 @@ if (DEBUG === true) {
               <dt>Address</dt><dd>42 Haranishi-cho Goryo Yamashina-ku, Kyoto 607-8424, Japan&nbsp;&nbsp;<a href="map.html" id="open-map" class="button" rel="#map">map</a></dd>
               <dt>Phone</dt><dd>+81-75-591-3354</dd>
               <dt>Fax</dt><dd>+81-75-581-8544</dd>
-              <dt>President</dt><dd>Shigeaki Kitamura</dd>
+              <dt>President</dt><dd>Takahiro Kitamura</dd>
               <dt>Establishment</dt><dd>1964</dd>
               <dt>Founded</dt><dd>1970</dd>
               <dt>Capital</dt><dd>25,000,000 yen</dd>
@@ -125,7 +125,7 @@ if (DEBUG === true) {
             </div>
             <h3>株式会社　京都繊維</h3>
             <dl class="info">
-              <dt>代表取締役</dt><dd>北村繁明</dd>
+              <dt>代表取締役</dt><dd>北村隆裕</dd>
               <dt>所在地</dt><dd>〒607-8424 京都市山科区御陵原西町42番地&nbsp;&nbsp;<a href="map.html" id="open-map-ja" class="button" rel="#map">地図</a></dd>
               <dt>電話</dt><dd>075-591-3354</dd>
               <dt>Fax</dt><dd>075-581-8544</dd>
